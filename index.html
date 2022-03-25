@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#EF7800">
+		<meta name="theme-color" content="#EF7800">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/header.css" async>
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<!-- Иконки сайта -->
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#ef7800">
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- Стии первого блока -->
+		<style>
+			.head_block
+			{
+			    padding-top: 144px;
+			}
+
+
+			.head_block .cont
+			{
+			    position: relative;
+			    z-index: 3;
+
+			    display: flex;
+
+			    justify-content: flex-start;
+			    align-items: center;
+			    align-content: center;
+			    flex-wrap: wrap;
+			}
+
+
+			.head_block .title
+			{
+			    color: #5c5c5c;
+			    font-size: 29px;
+			    line-height: 38px;
+
+			    position: relative;
+			    z-index: 23;
+
+			    letter-spacing: -1px;
+			}
+
+
+			.head_block .videos
+			{
+			    position: relative;
+
+			    overflow: hidden;
+
+			    width: 1191px;
+			    margin-right: -117px;
+			    margin-left: -150px;
+
+			    background: #ededed;
+			}
+
+			.head_block .mask
+			{
+			    color: #fff;
+
+			    position: relative;
+			    z-index: 9;
+
+			    display: block;
+
+			    width: 1191px;
+			    height: 347px;
+			    margin: -6px 0;
+
+			    transition: color .3s linear;
+			}
+
+
+			.head_block .videos video
+			{
+			    position: absolute;
+			    z-index: 1;
+			    top: 0;
+			    right: 0;
+			    bottom: 0;
+			    left: 0;
+
+			    display: none;
+
+			    width: 100%;
+			    height: 100%;
+			    margin: auto;
+
+			    object-fit: cover;
+			}
+
+			.head_block .videos video.hide
+			{
+			    display: block;
+
+			    animation: videoHide .3s linear forwards;
+
+			    opacity: 0;
+			}
+
+			.head_block .videos video.show
+			{
+			    display: block;
+
+			    animation: videoShow .3s linear forwards;
+			}
+
+
+
+			.categories
+			{
+			    margin-top: 104px;
+			    margin-bottom: 66px;
+			}
+
+
+			.categories .row
+			{
+			    margin-bottom: -10px;
+			    margin-left: -32px;
+			}
+
+			.categories .row > *
+			{
+			    max-width: calc(100% - 32px);
+			    margin-bottom: 10px;
+			    margin-left: 32px;
+			}
+
+
+			.categories .btn
+			{
+			    font-size: 58px;
+			    font-weight: 800;
+			    line-height: 80px;
+
+			    transition: color .2s linear;
+			    letter-spacing: -2px;
+			}
+
+			.categories .btn small
+			{
+			    color: #bdbdbd;
+			    font-size: 32px;
+			    font-weight: normal;
+			    line-height: 52px;
+
+			    display: inline-block;
+
+			    margin-left: 4px;
+
+			    vertical-align: top;
+			    letter-spacing: -3px;
+			}
+
+			.categories .btn:hover,
+			.categories .btn.active
+			{
+			    color: #ef7800;
+
+			    transition-delay: 0s;
+			}
+
+			.categories .btn.animated
+			{
+			    animation: categoriesShow .3s linear;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<a href="/" class="feedback_link" target="_balnk" rel="noopener">
+							<span>Get in touch on isdk.com</span>
+							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.79289 15.7929C6.40237 16.1834 6.40237 16.8166 6.79289 17.2071C7.18342 17.5976 7.81658 17.5976 8.20711 17.2071L6.79289 15.7929ZM18.5 6.5C18.5 5.94771 18.0523 5.5 17.5 5.5L8.5 5.5C7.94772 5.5 7.5 5.94771 7.5 6.5C7.5 7.05228 7.94772 7.5 8.5 7.5L16.5 7.5L16.5 15.5C16.5 16.0523 16.9477 16.5 17.5 16.5C18.0523 16.5 18.5 16.0523 18.5 15.5L18.5 6.5ZM8.20711 17.2071L18.2071 7.20711L16.7929 5.79289L6.79289 15.7929L8.20711 17.2071Z" fill="currentColor"/></svg>
+						</a>
+					</div>
+				</header>
+
+
+				<section class="head_block">
+					<div class="cont">
+						<div class="title">Fresh design solutions based<br> on functionality</div>
+
+						<div class="videos">
+							<svg class="mask" viewBox="0 0 1191 347" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1191 0H0V347H1191V0ZM8 340V5H180.59V340H8ZM185.581 88.1526C185.581 45.1426 222.564 5 268.083 5H522.662V173.217H459.165V176.562C554.469 198.067 536.925 340 441.147 340H185.581V173.217H260.97V169.872C214.504 160.792 185.581 131.641 185.581 88.1526ZM693.573 340C785.084 340 859.525 264.971 859.525 172.739C859.525 80.5064 785.084 5 693.573 5H527.621V340H693.573ZM863.733 340V5H1189L1064.77 172.261L1189 340H863.733Z" fill="currentColor"/></svg>
+
+							<video data-src="video.mp4" muted autoplay loop id="video1" type='video/mp4' class="lazyload"></video>
+
+							<video data-src="video2.mp4" muted autoplay loop id="video2" type='video/mp4' class="lazyload"></video>
+
+							<video data-src="video.mp4" muted autoplay loop id="video3" type='video/mp4' class="lazyload"></video>
+
+							<video data-src="video2.mp4" muted autoplay loop id="video4" type='video/mp4' class="lazyload"></video>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="categories">
+					<div class="cont">
+						<div class="row">
+							<button class="btn lazyload active" data-video="video1" data-filter="*" style="animation-delay: 0.1s;">
+								<span>All</span>
+								<small>15</small>
+							</button>
+
+							<button class="btn lazyload" data-video="video2" data-filter=".filter1" style="animation-delay: 0.4s;">
+								<span>B2B eCommerce</span>
+								<small>5</small>
+							</button>
+
+							<button class="btn lazyload" data-video="video3" data-filter=".filter2" style="animation-delay: 0.7s;">
+								<span>Digital Transformation</span>
+								<small>7</small>
+							</button>
+
+							<button class="btn lazyload" data-video="video4" data-filter=".filter3" style="animation-delay: 1s;">
+								<span>Team as a Service</span>
+								<small>1</small>
+							</button>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="portfolio">
+					<div class="cont">
+						<div class="row">
+							<a href="/" class="item big_w filter3">
+								<div class="thumb blue" data-color="#ebf5ff">
+									<img data-src="images/tmp/portfolio_thumb.jpg" alt="" class="lazyload">
+								</div>
+
+								<div class="info">
+									<div class="year">2021</div>
+									<div class="category">Website, Custom Development</div>
+								</div>
+
+								<div class="company">Harman & JBL</div>
+								<div class="name">Marketing and eCommerce Setup</div>
+							</a>
+
+							<a href="/" class="item big_w filter2">
+								<div class="thumb orange" data-color="#fff3eb">
+									<img data-src="images/tmp/portfolio_thumb2.jpg" alt="" class="lazyload">
+								</div>
+
+								<div class="info">
+									<div class="year">2021</div>
+									<div class="category">Website, Custom Development</div>
+								</div>
+
+								<div class="company">Harman & JBL</div>
+								<div class="name">Marketing and eCommerce Setup</div>
+							</a>
+
+							<a href="/" class="item filter1">
+								<div class="thumb green" data-color="#eff7ea">
+									<!-- <img data-src="images/tmp/portfolio_thumb.jpg" alt="" class="lozad"> -->
+								</div>
+
+								<div class="info">
+									<div class="year">2021</div>
+									<div class="category">Website, Custom Development</div>
+								</div>
+
+								<div class="company">Herbalife</div>
+								<div class="name">eCommerce Omni-channel</div>
+							</a>
+
+							<a href="/" class="item filter1">
+								<div class="thumb green" data-color="#eff7ea">
+									<!-- <img data-src="images/tmp/portfolio_thumb.jpg" alt="" class="lozad"> -->
+								</div>
+
+								<div class="info">
+									<div class="year">2021</div>
+									<div class="category">Website, Custom Development</div>
+								</div>
+
+								<div class="company">Herbalife</div>
+								<div class="name">eCommerce Omni-channel</div>
+							</a>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="action_block">
+					<div class="cont">
+						<a href="/" class="feedback_link" target="_balnk" rel="noopener">
+							<img data-src="images/ic_feedback.svg" alt="" class="icon lazyload">
+							<span>Get in touch to discuss your case</span>
+						</a>
+					</div>
+				</section>
+
+
+				<section class="about_block">
+					<div class="cont row">
+						<div class="logo">
+							<img data-src="images/about_isdk_logo.svg" alt="" class="lazyload">
+						</div>
+
+						<div class="data">
+							<div class="title">Explore</div>
+
+							<div class="desc">more case studies, our services, clients’ feedback and development blog</div>
+
+							<a href="/" class="link" target="_balnk" rel="noopener">
+								<span>isdk.pro</span>
+								<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.79289 15.7929C6.40237 16.1834 6.40237 16.8166 6.79289 17.2071C7.18342 17.5976 7.81658 17.5976 8.20711 17.2071L6.79289 15.7929ZM18.5 6.5C18.5 5.94771 18.0523 5.5 17.5 5.5L8.5 5.5C7.94772 5.5 7.5 5.94771 7.5 6.5C7.5 7.05228 7.94772 7.5 8.5 7.5L16.5 7.5L16.5 15.5C16.5 16.0523 16.9477 16.5 17.5 16.5C18.0523 16.5 18.5 16.0523 18.5 15.5L18.5 6.5ZM8.20711 17.2071L18.2071 7.20711L16.7929 5.79289L6.79289 15.7929L8.20711 17.2071Z" fill="currentColor"/></svg>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="top">
+					<div class="cont">
+						<div class="row">
+							<div class="email">
+								<a href="mailto:info@isdk.pro">
+									<span>info@isdk.pro</span>
+								</a>
+							</div>
+
+							<a href="/" class="feedback_link" target="_balnk" rel="noopener">
+								<img data-src="images/ic_feedback.svg" alt="" class="icon lazyload">
+
+								<span>Contact via pop-up form</span>
+
+								<svg class="arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.79289 15.7929C6.40237 16.1834 6.40237 16.8166 6.79289 17.2071C7.18342 17.5976 7.81658 17.5976 8.20711 17.2071L6.79289 15.7929ZM18.5 6.5C18.5 5.94771 18.0523 5.5 17.5 5.5L8.5 5.5C7.94772 5.5 7.5 5.94771 7.5 6.5C7.5 7.05228 7.94772 7.5 8.5 7.5L16.5 7.5L16.5 15.5C16.5 16.0523 16.9477 16.5 17.5 16.5C18.0523 16.5 18.5 16.0523 18.5 15.5L18.5 6.5ZM8.20711 17.2071L18.2071 7.20711L16.7929 5.79289L6.79289 15.7929L8.20711 17.2071Z" fill="currentColor"/></svg>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="info">
+					<div class="cont row">
+						<div class="col_left">
+							<div class="logo">
+								<img src="images/logo.svg" alt="">
+							</div>
+
+							<div class="socials">
+								<div><a href="/" target="_blank" rel="noopener nofollow">
+									<span>LinkedIn</span>
+								</a></div>
+
+								<div><a href="/" target="_blank" rel="noopener nofollow">
+									<span>Medium</span>
+								</a></div>
+
+								<div><a href="/" target="_blank" rel="noopener nofollow">
+									<span>Facebook</span>
+								</a></div>
+							</div>
+						</div>
+
+						<div class="contacts_wrap">
+							<div class="row">
+								<div class="contacts">
+									<div class="country">Germany</div>
+
+									<div class="city">Berlin</div>
+
+									<div class="phone">
+										<a href="tel:4915233977274">
+											<span>49 15233977274</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="contacts">
+									<div class="country">Baltic</div>
+
+									<div class="city">Riga, L atvia</div>
+
+									<div class="phone">
+										<a href="tel:37127869927">
+											<span>371 27869927</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="contacts">
+									<div class="country">Russia</div>
+
+									<div class="city">Moscow</div>
+
+									<div class="phone">
+										<a href="tel:74957204026">
+											<span>7 495 7204026</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="contacts">
+									<div class="country">Benelux</div>
+
+									<div class="city">Antwerp, Belgium</div>
+
+									<div class="phone">
+										<a href="tel:3243460180">
+											<span>32 43460180</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="contacts">
+									<div class="country">USA</div>
+
+									<div class="city">Austin, TX</div>
+
+									<div class="phone">
+										<a href="tel:4915233977274">
+											<span>49 15233977274</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">ISDK &copy;2010-2020, All rights reserved.</div>
+
+						<div class="links">
+							<div><a href="/">Cookies & Privacy policy</a></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/styles.css" async>
+		<link rel="stylesheet" href="css/response.css" async>
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

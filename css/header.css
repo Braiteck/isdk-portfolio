@@ -1,0 +1,191 @@
+/*------------
+    Header
+------------*/
+header
+{
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 40px 0;
+
+    transition: .1s linear;
+}
+
+
+header.fixed
+{
+    padding: 20px 0;
+
+    background: rgba(255, 255, 255, .6);
+}
+
+
+header .cont
+{
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+
+
+header .logo,
+header .logo img
+{
+    color: currentColor;
+
+    display: block;
+
+    width: 65px;
+    height: 31px;
+
+    text-decoration: none;
+}
+
+
+
+header .back_link
+{
+    margin-right: auto;
+    margin-left: 48px;
+}
+
+header .back_link a
+{
+    color: #252525;
+    font-size: 15px;
+    line-height: 21px;
+
+    position: relative;
+
+    display: inline-block;
+
+    padding-left: 28px;
+
+    transition: color .2s linear;
+    vertical-align: top;
+    white-space: nowrap;
+    text-decoration: none;
+    letter-spacing: -.01em;
+}
+
+header .back_link a:before
+{
+    color: #ef7800;
+
+    position: absolute;
+    top: 1px;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 8px;
+    height: 8px;
+    margin: auto;
+
+    content: '';
+    transition: transform .2s linear;
+    transform: translateX(13px) rotate(-45deg);
+
+    border-top: 2px solid;
+    border-left: 2px solid;
+}
+
+
+header .back_link a:hover
+{
+    color: #ef7800;
+}
+
+header .back_link a:hover:before
+{
+    transform: translateX(6px) rotate(-45deg);
+}
+
+
+
+header .feedback_link
+{
+    color: #252525;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 21px;
+
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+
+    padding: 13px;
+
+    transition: .2s linear;
+    text-decoration: none;
+    letter-spacing: -.01em;
+
+    border: 1px solid #e0e0e0;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+header .feedback_link:before
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 0;
+    height: 100%;
+
+    content: '';
+    transition: .2s linear;
+    pointer-events: none;
+
+    opacity: 0;
+    background: #ef7800;
+}
+
+header .feedback_link .icon
+{
+    color: #ef7800;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+
+    transition: .2s linear;
+}
+
+
+header .feedback_link:hover
+{
+    color: #fff;
+
+    border-color: #ef7800;
+}
+
+header .feedback_link:hover:before
+{
+    width: 100%;
+
+    opacity: 1;
+}
+
+header .feedback_link:hover .icon
+{
+    color: #fff;
+
+    transition: .2s linear, color .2s linear .1s;
+    transform: translate(4px, -4px);
+}
