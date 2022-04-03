@@ -1,4 +1,175 @@
-@media print, (max-width: 1279px)
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 40px;
+    }
+
+
+
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio .row
+    {
+        margin-bottom: -80px;
+    }
+
+    .portfolio .row > *
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .portfolio .item .company
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+    .portfolio .item .name
+    {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .feedback_link
+    {
+        font-size: 26px;
+        line-height: 32px;
+
+        padding: 24px;
+    }
+
+
+
+    /*-----------------
+        About block
+    -----------------*/
+    .about_block
+    {
+        margin-top: 160px;
+    }
+
+
+    .about_block .logo img
+    {
+        width: 560px;
+        height: 296px;
+    }
+
+
+    .about_block .title
+    {
+        font-size: 52px;
+        line-height: 66px;
+    }
+
+
+    .about_block .desc
+    {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+
+    .about_block .link
+    {
+        font-size: 42px;
+        line-height: 48px;
+
+        margin-top: 40px;
+        padding-right: 36px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        margin-top: 160px;
+        padding-bottom: 32px;
+    }
+
+
+    footer .top
+    {
+        margin-bottom: 100px;
+    }
+
+    footer .top .row
+    {
+        width: 80%;
+    }
+
+
+    footer .bottom
+    {
+        margin-top: 100px;
+    }
+
+
+
+    footer .email a
+    {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+
+    footer .feedback_link
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        width: 628px;
+        padding: 11px 23px;
+    }
+
+
+
+    footer .contacts_wrap
+    {
+        width: 80%;
+    }
+
+
+    footer .contacts_wrap .row
+    {
+        margin-bottom: -80px;
+    }
+
+    footer .contacts_wrap .row > *
+    {
+        margin-bottom: 80px;
+    }
+
+
+    footer .contacts .country
+    {
+        font-size: 26px;
+        line-height: 36px;
+
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
 {
     /*-------------------
         Global styles
@@ -10,66 +181,402 @@
     }
 
 
-
-    /*--------------
-        Fancybox
-    --------------*/
-    .fancybox__slide
+    .cont
     {
-        padding: 32px;
+        padding: 0 32px;
     }
 
 
 
-    /*------------
-        Header
-    ------------*/
-
-
-
-    /*-------------
-        Sidebar
-    -------------*/
-
-
-
     /*---------------
-        Page head
+        Portfolio
     ---------------*/
+    .portfolio .item .thumb,
+    .portfolio .item.big_w .thumb
+    {
+        height: 536px;
+        padding: 60px 60px 0;
+    }
+
+    .portfolio .item .thumb
+    {
+        height: 424px;
+    }
 
 
+    .portfolio .item .info
+    {
+        margin-top: 28px;
+    }
 
-    /*----------------
-        Block head
-    ----------------*/
+
+    .portfolio .item .year,
+    .portfolio .item .category
+    {
+        padding-bottom: 23px;
+    }
+
+    .portfolio .item .company
+    {
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-top: 24px;
+    }
+
+    .portfolio .item .name
+    {
+        font-size: 24px;
+        line-height: 32px;
+
+        margin-top: 12px;
+        margin-right: 0;
+    }
+
+
+    .portfolio .item.big_w .year
+    {
+        width: 240px;
+    }
+
+    .portfolio .item.big_w .category
+    {
+        width: calc(100% - 268px);
+    }
+
+    .portfolio .item.big_w .company
+    {
+        width: 240px;
+        margin-top: 24px;
+    }
+
+    .portfolio .item.big_w .name
+    {
+        width: calc(100% - 268px);
+        margin-top: 24px;
+    }
 
 
 
     /*------------------
-        Form elements
+        Action block
     ------------------*/
+    .action_block
+    {
+        margin-top: 80px;
+    }
 
 
+    .action_block .feedback_link
+    {
+        font-size: 24px;
+        line-height: 30px;
 
-    /*----------------
-        Typography
-    ----------------*/
+        padding: 19px;
+    }
+
+    .action_block .feedback_link .icon
+    {
+        width: 36px;
+        height: 36px;
+        margin-right: 24px;
+    }
 
 
 
     /*-----------------
-        Main slider
+        About block
     -----------------*/
+    .about_block
+    {
+        margin-top: 132px;
+    }
+
+
+    .about_block .logo img
+    {
+        width: 501px;
+        height: 265px;
+    }
+
+
+    .about_block .data
+    {
+        width: 348px;
+    }
+
+
+    .about_block .title
+    {
+        font-size: 46px;
+        line-height: 56px;
+    }
+
+
+    .about_block .desc
+    {
+        font-size: 23px;
+        line-height: 33px;
+    }
+
+
+    .about_block .link
+    {
+        font-size: 38px;
+        line-height: 44px;
+
+        margin-top: 32px;
+    }
 
 
 
     /*------------
         Footer
     ------------*/
+    footer
+    {
+        margin-top: 120px;
+        padding-bottom: 28px;
+    }
+
+
+    footer .top
+    {
+        margin-bottom: 80px;
+    }
+
+    footer .top .row
+    {
+        width: 75%;
+    }
+
+
+    footer .bottom
+    {
+        margin-top: 80px;
+    }
+
+
+    footer .email a
+    {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+
+    footer .feedback_link
+    {
+        width: 472px;
+    }
+
+    footer .feedback_link .icon
+    {
+        width: 36px;
+        height: 36px;
+        margin-right: 36px;
+    }
+
+
+    footer .contacts_wrap
+    {
+        width: 75%;
+    }
+
+
+    footer .contacts_wrap .row
+    {
+        margin-bottom: -60px;
+    }
+
+    footer .contacts_wrap .row > *
+    {
+        margin-bottom: 60px;
+    }
+
+
+    footer .contacts .country
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+
+    footer .contacts .city,
+    footer .contacts .phone a
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont
+    {
+        padding: 0 28px;
+    }
 
 
 
-    /*-----------
-        PopUp
-    -----------*/
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio .row
+    {
+        margin-bottom: -60px;
+    }
+
+    .portfolio .row > *
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .portfolio .item .thumb,
+    .portfolio .item.big_w .thumb
+    {
+        height: 400px;
+        padding: 48px 48px 0;
+    }
+
+    .portfolio .item .thumb
+    {
+        height: 280px;
+    }
+
+
+    .portfolio .item .info
+    {
+        margin-top: 24px;
+    }
+
+
+    .portfolio .item .year,
+    .portfolio .item .category
+    {
+        padding-bottom: 19px;
+    }
+
+    .portfolio .item .company
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .portfolio .item .name
+    {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+
+    .portfolio .item.big_w .year
+    {
+        width: 200px;
+    }
+
+    .portfolio .item.big_w .category
+    {
+        width: calc(100% - 224px);
+    }
+
+    .portfolio .item.big_w .company
+    {
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .portfolio .item.big_w .name
+    {
+        width: calc(100% - 224px);
+        margin-top: 20px;
+    }
+
+
+
+    /*-----------------
+        About block
+    -----------------*/
+    .about_block
+    {
+        margin-top: 124px;
+    }
+
+
+    .about_block .logo img
+    {
+        width: 422px;
+        height: 223px;
+    }
+
+
+    .about_block .data
+    {
+        width: 248px;
+    }
+
+
+    .about_block .title
+    {
+        font-size: 44px;
+        line-height: 50px;
+    }
+
+
+    .about_block .desc
+    {
+        font-size: 22px;
+        line-height: 29px;
+
+        margin-top: 24px;
+    }
+
+
+    .about_block .link
+    {
+        font-size: 34px;
+        line-height: 36px;
+
+        margin-top: 24px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .top
+    {
+        margin-bottom: 60px;
+    }
+
+    footer .top .row
+    {
+        width: 100%;
+    }
+
+
+    footer .bottom
+    {
+        margin-top: 60px;
+    }
+
+
+    footer .contacts .country
+    {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    footer .contacts .city,
+    footer .contacts .phone a
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
 }

@@ -266,9 +266,9 @@ button
 {
     width: 100%;
     margin: 0 auto;
-    /* max-width: 1344px;
-    padding: 0 24px; */
-    padding: 0 64px;
+    /* max-width: 1440px;
+    padding: 0 72px; */
+    padding: 0 72px;
 }
 
 
@@ -1154,6 +1154,7 @@ footer
     margin-top: 208px;
     padding-bottom: 38px;
 }
+
 
 
 footer .top

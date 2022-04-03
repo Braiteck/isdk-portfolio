@@ -52,7 +52,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 	// Проекты - категории
-	document.querySelectorAll('.categories .btn').forEach(element => {
+	const categoriesBtns = document.querySelectorAll('.categories .btn')
+
+	categoriesBtns.forEach(element => {
 		element.addEventListener('mouseover', function () {
 			setTimeout(() => {
 				let video = document.getElementById(element.getAttribute('data-video'))
@@ -64,18 +66,25 @@ document.addEventListener("DOMContentLoaded", function () {
 			})
 		})
 
-		element.addEventListener('click', function (e) {
-			iso.arrange({ filter: element.getAttribute('data-filter') })
-		})
-	})
-
-	document.querySelectorAll('.categories .btn').forEach(element => {
 		element.addEventListener('mouseleave', function () {
 			let video = document.getElementById(element.getAttribute('data-video'))
 
 			video.classList.remove('show')
 			video.classList.add('hide')
 			video.pause()
+		})
+
+		element.addEventListener('click', function (e) {
+			e.preventDefault()
+			e.stopPropagation()
+
+			Array.from(categoriesBtns).forEach(function (el) {
+				el.classList.remove('active')
+			})
+
+			element.classList.add('active')
+
+			iso.arrange({ filter: element.getAttribute('data-filter') })
 		})
 	})
 
