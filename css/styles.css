@@ -8,7 +8,8 @@
 }
 
 /* For IE */
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none)
 {
     .supports_error
     {
@@ -102,7 +103,7 @@ input[type=number]
 :hover,
 :active
 {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-touch-callout: none;
 }
 
@@ -264,9 +265,10 @@ button
 .cont
 {
     width: 100%;
-    max-width: 1344px;
     margin: 0 auto;
-    padding: 0 24px;
+    /* max-width: 1344px;
+    padding: 0 24px; */
+    padding: 0 64px;
 }
 
 
@@ -1062,6 +1064,8 @@ header .feedback_link
 
 .next_case .next
 {
+    color: #ededed;
+
     position: absolute;
     z-index: 1;
     top: 0;
@@ -1070,6 +1074,15 @@ header .feedback_link
     display: block;
 
     width: 100%;
+
+    transition: .2s linear;
+}
+
+.next_case .link:hover .next
+{
+    color: #ef7800;
+
+    transform: translateY(-30px);
 }
 
 
@@ -1114,7 +1127,7 @@ header .feedback_link
 
     letter-spacing: -3px;
 
-    font-feature-settings: 'ss01' on;
+    font-feature-settings: 'ss01'on;
 }
 
 
@@ -1150,7 +1163,7 @@ footer .top
 
 footer .top .row
 {
-    width: 966px;
+    width: 73.6%;
     max-width: 100%;
     margin-left: auto;
 
@@ -1418,7 +1431,7 @@ footer .socials a:hover span:after
 
 footer .contacts_wrap
 {
-    width: 966px;
+    width: 73.6%;
     max-width: 100%;
     margin-left: auto;
 }
