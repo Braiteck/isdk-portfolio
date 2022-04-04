@@ -220,3 +220,68 @@ header .feedback_link:hover .icon
         padding: 11px 19px;
     }
 }
+
+
+
+@media print,
+(max-width: 767px)
+{
+    header
+    {
+        padding: 20px 0;
+    }
+
+
+    header .feedback_link
+    {
+        font-size: 14px;
+        line-height: 22px;
+
+        padding: 7px 15px;
+    }
+
+    header .feedback_link .icon
+    {
+        width: 22px;
+        height: 22px;
+        margin-left: 8px;
+    }
+}
+
+
+
+@media print,
+(max-width: 479px)
+{
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 18px 0;
+    }
+
+
+    header .logo,
+    header .logo img
+    {
+        width: 42px;
+        height: 20px;
+    }
+
+
+    header .feedback_link
+    {
+        font-size: 8.75px;
+        line-height: 12px;
+
+        padding: 7px;
+    }
+
+    header .feedback_link .icon
+    {
+        width: 14px;
+        height: 14px;
+        margin-left: 6px;
+    }
+}

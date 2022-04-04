@@ -628,6 +628,11 @@ header .feedback_link
     transition: filter .2s linear .2s;
 }
 
+.action_block .feedback_link br
+{
+    display: none;
+}
+
 
 .action_block .feedback_link:hover
 {

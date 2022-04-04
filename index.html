@@ -361,6 +361,106 @@
 			    }
 			}
 
+
+
+			@media print, (max-width: 767px)
+			{
+			    .head_block
+			    {
+			        padding-top: 112px;
+			    }
+
+
+			    .head_block .videos
+			    {
+			        width: calc(100% + 48px);
+			        margin-right: -44px;
+			        margin-left: -4px;
+			    }
+
+
+
+			    .categories
+			    {
+			        margin-top: 64px;
+			        margin-bottom: 24px;
+			    }
+
+
+			    .categories .row
+			    {
+			        margin-bottom: -12px;
+			        margin-left: -24px;
+			    }
+
+
+			    .categories .btn
+			    {
+			        font-size: 33px;
+			        line-height: 39px;
+			    }
+
+			    .categories .btn small
+			    {
+			        font-size: 18px;
+			        line-height: 30px;
+			    }
+			}
+
+
+
+			@media print, (max-width: 479px)
+			{
+			    .head_block
+			    {
+			        padding-top: 86px;
+			    }
+
+
+			    .head_block .videos
+			    {
+			        width: calc(100% + 32px);
+			        margin-right: -32px;
+			        margin-left: 0;
+			    }
+
+
+			    .categories
+			    {
+			        margin-top: 50px;
+			        margin-bottom: 12px;
+			    }
+
+
+			    .categories .row
+			    {
+			        flex-direction: column;
+
+			        margin-left: 0;
+			    }
+
+			    .categories .row > *
+			    {
+			        max-width: 100%;
+			        margin-left: 0;
+			    }
+
+
+			    .categories .btn
+			    {
+			        font-size: 30px;
+			        line-height: 34px;
+			    }
+
+			    .categories .btn small
+			    {
+			        font-size: 16px;
+			        line-height: 24px;
+
+			        letter-spacing: -1px;
+			    }
+			}
+
 		</style>
 	</head>
 
@@ -494,7 +594,7 @@
 					<div class="cont">
 						<a href="/" class="feedback_link" target="_balnk" rel="noopener">
 							<img data-src="images/ic_feedback.svg" alt="" class="icon lazyload">
-							<span>Get in touch to discuss your case</span>
+							<span>Get in touch to<br> discuss your case</span>
 						</a>
 					</div>
 				</section>
