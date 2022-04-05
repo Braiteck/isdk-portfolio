@@ -13,17 +13,11 @@ header
 }
 
 
-header.fixed
-{
-    padding: 20px 0;
-}
-
-
 header .cont
 {
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -127,12 +121,11 @@ header .feedback_link
     pointer-events: auto;
 
     border: 1px solid #e0e0e0;
-    background: var(--bg);
 
-    justify-content: flex-start;
-    align-items: center;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 header .feedback_link:before
@@ -193,6 +186,18 @@ header .feedback_link:hover .icon
 
 
 
+header.fixed
+{
+    padding: 20px 0;
+}
+
+header.fixed .feedback_link
+{
+    background: var(--bg);
+}
+
+
+
 
 
 @media print,
@@ -215,6 +220,12 @@ header .feedback_link:hover .icon
     }
 
 
+    header .back_link
+    {
+        margin-left: 40px;
+    }
+
+
     header .feedback_link
     {
         padding: 11px 19px;
@@ -229,6 +240,35 @@ header .feedback_link:hover .icon
     header
     {
         padding: 20px 0;
+    }
+
+
+    header .logo,
+    header .logo img
+    {
+        width: 52px;
+        height: 25px;
+    }
+
+
+    header .back_link
+    {
+        margin-left: 12px;
+    }
+
+    header .back_link a
+    {
+        font-size: 12px;
+
+        padding-left: 20px;
+    }
+
+    header .back_link a:before
+    {
+        width: 7px;
+        height: 7px;
+
+        transform: translateX(8px) rotate(-45deg);
     }
 
 
@@ -267,6 +307,12 @@ header .feedback_link:hover .icon
     {
         width: 42px;
         height: 20px;
+    }
+
+
+    header .back_link a
+    {
+        font-size: 10px;
     }
 
 

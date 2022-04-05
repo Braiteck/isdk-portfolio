@@ -427,11 +427,13 @@ header .feedback_link
 
 .portfolio .item .thumb
 {
+    position: relative;
+
     display: flex;
+    overflow: hidden;
 
     width: 100%;
-    height: 600px;
-    padding: 40px 54px 0;
+    padding-bottom: 56.25%;
 
     background: #ddd;
 
@@ -458,10 +460,16 @@ header .feedback_link
 
 .portfolio .item .thumb img
 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
     display: block;
 
-    max-width: 100%;
-    max-height: 100%;
+    max-width: calc(100% - 108px);
+    max-height: calc(100% - 54px);
+    margin: auto;
 
     border-radius: 5px;
 
@@ -489,19 +497,19 @@ header .feedback_link
 .portfolio .item .year
 {
     width: 33.333%;
-    padding-bottom: 29px;
+    padding-top: 29px;
 
-    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
 }
 
 .portfolio .item .category
 {
     width: 66.666%;
-    padding-bottom: 29px;
+    padding-top: 29px;
 
     text-align: right;
 
-    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
 }
 
 
@@ -532,8 +540,13 @@ header .feedback_link
 
 .portfolio .item.big_w .thumb
 {
-    height: 700px;
-    padding: 80px 108px 0;
+    padding-bottom: 700px;
+}
+
+.portfolio .item.big_w .thumb img
+{
+    max-width: calc(100% - 220px);
+    max-height: calc(100% - 95px);
 }
 
 .portfolio .item.big_w .year

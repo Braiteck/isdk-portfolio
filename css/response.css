@@ -25,6 +25,12 @@
     }
 
 
+    .portfolio .item.big_w .thumb
+    {
+        padding-bottom: 652px;
+    }
+
+
     .portfolio .item .company
     {
         font-size: 17px;
@@ -90,6 +96,66 @@
 
         margin-top: 40px;
         padding-right: 36px;
+    }
+
+
+
+    /*---------------
+        Case data
+    ---------------*/
+    .case_data .info_block .title
+    {
+        font-size: 28px;
+    }
+
+
+    .case_data .info_block .desc
+    {
+        font-size: 26px;
+        line-height: 36px;
+    }
+
+
+    .case_data .links a
+    {
+        font-size: 28px;
+
+        padding: 27px;
+    }
+
+
+
+    /*---------------
+        Next case
+    ---------------*/
+    .next_case
+    {
+        margin-top: 200px;
+    }
+
+
+    .next_case .data
+    {
+        height: 680px;
+        padding: 100px 60px;
+    }
+
+
+    .next_case .company
+    {
+        font-size: 28px;
+        line-height: 36px;
+
+        width: 800px;
+    }
+
+    .next_case .name
+    {
+        font-size: 64px;
+        line-height: 80px;
+
+        width: 780px;
+        margin-top: 100px;
     }
 
 
@@ -191,16 +257,22 @@
     /*---------------
         Portfolio
     ---------------*/
-    .portfolio .item .thumb,
-    .portfolio .item.big_w .thumb
+    .portfolio .item .thumb img
     {
-        height: 536px;
-        padding: 60px 60px 0;
+        max-width: calc(100% - 80px);
+        max-height: calc(100% - 40px);
     }
 
-    .portfolio .item .thumb
+
+    .portfolio .item.big_w .thumb
     {
-        height: 424px;
+        padding-bottom: 540px;
+    }
+
+    .portfolio .item.big_w .thumb img
+    {
+        max-width: calc(100% - 120px);
+        max-height: calc(100% - 60px);
     }
 
 
@@ -213,7 +285,7 @@
     .portfolio .item .year,
     .portfolio .item .category
     {
-        padding-bottom: 23px;
+        padding-top: 23px;
     }
 
     .portfolio .item .company
@@ -330,6 +402,99 @@
 
 
 
+    /*---------------
+        Case data
+    ---------------*/
+    .case_data .year
+    {
+        width: 240px;
+        padding-bottom: 23px;
+    }
+
+    .case_data .category
+    {
+        width: calc(100% - 268px);
+        padding-bottom: 23px;
+    }
+
+
+    .case_data .info_block .title
+    {
+        font-size: 26px;
+        line-height: 32px;
+
+        width: 240px;
+    }
+
+    .case_data .info_block .title br
+    {
+        display: none;
+    }
+
+
+    .case_data .info_block .desc
+    {
+        font-size: 22px;
+        line-height: 32px;
+
+        width: calc(100% - 268px);
+    }
+
+
+    .case_data .info_block .images
+    {
+        margin-top: 80px;
+    }
+
+
+    .case_data .links a
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        padding: 19px;
+    }
+
+
+
+    /*---------------
+        Next case
+    ---------------*/
+    .next_case
+    {
+        margin-top: 150px;
+    }
+
+
+    .next_case .link
+    {
+        padding-top: 164px;
+    }
+
+
+    .next_case .data
+    {
+        height: 600px;
+        padding: 80px 40px;
+    }
+
+
+    .next_case .company
+    {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .next_case .name
+    {
+        font-size: 60px;
+        line-height: 72px;
+
+        margin-top: 80px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -425,16 +590,22 @@
     }
 
 
-    .portfolio .item .thumb,
-    .portfolio .item.big_w .thumb
+    .portfolio .item .thumb img
     {
-        height: 400px;
-        padding: 48px 48px 0;
+        max-width: calc(100% - 48px);
+        max-height: calc(100% - 28px);
     }
 
-    .portfolio .item .thumb
+
+    .portfolio .item.big_w .thumb
     {
-        height: 280px;
+        padding-bottom: 56.25%;
+    }
+
+    .portfolio .item.big_w .thumb img
+    {
+        max-width: calc(100% - 96px);
+        max-height: calc(100% - 48px);
     }
 
 
@@ -447,7 +618,7 @@
     .portfolio .item .year,
     .portfolio .item .category
     {
-        padding-bottom: 19px;
+        padding-top: 19px;
     }
 
     .portfolio .item .company
@@ -535,6 +706,97 @@
 
 
 
+    /*---------------
+        Case data
+    ---------------*/
+    .case_data .year
+    {
+        width: 200px;
+        padding-bottom: 19px;
+    }
+
+    .case_data .category
+    {
+        width: calc(100% - 224px);
+        padding-bottom: 19px;
+    }
+
+
+    .case_data .info_block .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        width: 200px;
+    }
+
+
+    .case_data .info_block .desc
+    {
+        font-size: 19px;
+        line-height: 27px;
+
+        width: calc(100% - 224px);
+    }
+
+
+    .case_data .info_block .images
+    {
+        margin-top: 60px;
+    }
+
+
+    .case_data .links a
+    {
+        font-size: 20px;
+    }
+
+    .case_data .links .icon
+    {
+        width: 28px;
+        height: 28px;
+        margin-left: 12px;
+    }
+
+
+
+    /*---------------
+        Next case
+    ---------------*/
+    .next_case
+    {
+        margin-top: 130px;
+    }
+
+
+    .next_case .link
+    {
+        padding-top: 130px;
+    }
+
+
+    .next_case .data
+    {
+        height: 480px;
+        padding: 60px 40px;
+    }
+
+
+    .next_case .company
+    {
+        font-size: 22px;
+    }
+
+    .next_case .name
+    {
+        font-size: 52px;
+        line-height: 64px;
+
+        margin-top: 40px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -589,11 +851,11 @@
     }
 
 
-    .portfolio .item .thumb,
-    .portfolio .item.big_w .thumb
+    .portfolio .item .thumb img,
+    .portfolio .item.big_w .thumb img
     {
-        height: 260px;
-        padding: 40px 24px 0;
+        max-width: calc(100% - 64px);
+        max-height: calc(100% - 40px);
     }
 
 
@@ -683,6 +945,94 @@
     .about_block .link
     {
         margin-top: 20px;
+    }
+
+
+
+    /*---------------
+        Case data
+    ---------------*/
+    .case_data .year
+    {
+        width: 124px;
+    }
+
+    .case_data .category
+    {
+        width: calc(100% - 124px);
+
+        text-align: right;
+    }
+
+
+    .case_data .info_block
+    {
+        margin-top: 80px;
+    }
+
+
+    .case_data .info_block .title
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .case_data .info_block .desc
+    {
+        width: 100%;
+    }
+
+
+    .case_data .info_block .images
+    {
+        margin-left: 0;
+    }
+
+    .case_data .info_block .image,
+    .case_data .info_block .image.full_w
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    .case_data .links
+    {
+        margin-bottom: -40px;
+        margin-left: 0;
+    }
+
+    .case_data .links > *
+    {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+
+    .case_data .links a
+    {
+        font-size: 20px;
+    }
+
+    .case_data .links .icon
+    {
+        width: 28px;
+        height: 28px;
+        margin-left: 12px;
+    }
+
+
+
+    /*---------------
+        Next case
+    ---------------*/
+    .next_case .name
+    {
+        font-size: 40px;
+        line-height: 52px;
     }
 
 
@@ -804,6 +1154,15 @@
     /*---------------
         Portfolio
     ---------------*/
+    .portfolio .item .thumb img,
+    .portfolio .item.big_w .thumb img
+    {
+        max-width: calc(100% - 48px);
+        max-height: calc(100% - 32px);
+    }
+
+
+
     .portfolio .item .info
     {
         margin-top: 18px;
@@ -840,6 +1199,85 @@
     .action_block .feedback_link span
     {
         width: calc(100% - 64px);
+    }
+
+
+
+    /*---------------
+        Case data
+    ---------------*/
+    .case_data .year
+    {
+        width: 100px;
+    }
+
+    .case_data .category
+    {
+        width: calc(100% - 100px);
+    }
+
+
+
+    .case_data .links
+    {
+        margin-bottom: -40px;
+        margin-left: 0;
+    }
+
+    .case_data .links > *
+    {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+
+    .case_data .links a
+    {
+        font-size: 20px;
+    }
+
+    .case_data .links .icon
+    {
+        width: 28px;
+        height: 28px;
+        margin-left: 12px;
+    }
+
+
+
+    /*---------------
+        Next case
+    ---------------*/
+    .next_case
+    {
+        margin-top: 100px;
+    }
+
+
+    .next_case .link
+    {
+        padding-top: 80px;
+    }
+
+
+    .next_case .data
+    {
+        height: 408px;
+        padding: 60px 24px;
+    }
+
+
+    .next_case .company
+    {
+        font-size: 19px;
+        line-height: 27px;
+    }
+
+    .next_case .name
+    {
+        font-size: 44px;
+        line-height: 56px;
     }
 
 
