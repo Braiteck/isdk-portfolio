@@ -45,10 +45,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 	// Проекты - фильтрация
-	const iso = new Isotope('.portfolio .row', {
-		itemSelector: '.item',
-		layoutMode: 'fitRows'
-	})
+	const portfolioRow = document.querySelector('.portfolio .row')
+
+	if (portfolioRow) {
+		const iso = new Isotope('.portfolio .row', {
+			itemSelector: '.item',
+			layoutMode: 'fitRows'
+		})
+	}
 
 
 	// Проекты - категории
