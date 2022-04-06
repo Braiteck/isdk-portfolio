@@ -1157,8 +1157,8 @@
     .portfolio .item .thumb img,
     .portfolio .item.big_w .thumb img
     {
-        max-width: calc(100% - 48px);
-        max-height: calc(100% - 32px);
+        max-width: calc(100% - 40px);
+        max-height: calc(100% - 24px);
     }
 
 
