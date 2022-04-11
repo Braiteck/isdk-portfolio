@@ -12,13 +12,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 	// Observer API
-	const boxes = document.querySelectorAll('.lazyload')
+	const boxes = document.querySelectorAll('.lazyload, .animate')
 
 	function scrollTracking(entries) {
 		for (const entry of entries) {
-			if (entry.intersectionRatio >= 0.2) {
+			if (entry.intersectionRatio >= 0.2 && entry.target.getAttribute('data-src')) {
 				entry.target.src = entry.target.getAttribute('data-src')
 				entry.target.classList.add('loaded')
+			}
+
+			if (entry.intersectionRatio >= 0.2 && entry.target.classList.contains('animate')) {
+				entry.target.classList.add('animated')
 			}
 		}
 	}
