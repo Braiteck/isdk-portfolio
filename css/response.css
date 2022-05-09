@@ -1,4 +1,46 @@
 @media print,
+(max-width: 1599px)
+{
+    /*---------------
+        Portfolio
+    ---------------*/
+    .portfolio .row > *.big_w
+    {
+        width: calc(100% - 24px);
+    }
+
+
+    .portfolio .item.big_w .thumb img
+    {
+        max-width: calc(100% - 220px);
+        max-height: calc(100% - 95px);
+    }
+
+
+    .portfolio .item.big_w .year
+    {
+        width: 306px;
+    }
+
+    .portfolio .item.big_w .category
+    {
+        width: calc(100% - 330px);
+    }
+
+    .portfolio .item.big_w .company
+    {
+        width: 306px;
+    }
+
+    .portfolio .item.big_w .name
+    {
+        width: calc(100% - 330px);
+    }
+}
+
+
+
+@media print,
 (max-width: 1439px)
 {
     /*-------------------
@@ -27,7 +69,7 @@
 
     .portfolio .item.big_w .thumb
     {
-        padding-bottom: 652px;
+        padding-bottom: 54.25%;
     }
 
 
@@ -254,6 +296,51 @@
 
 
 
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 24px;
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 24px;
+    }
+
+
+    .form .input
+    {
+        font-size: 18px;
+
+        height: 60px;
+    }
+
+
+    .form textarea
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+
+    .form .agree
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
     /*---------------
         Portfolio
     ---------------*/
@@ -266,7 +353,7 @@
 
     .portfolio .item.big_w .thumb
     {
-        padding-bottom: 540px;
+        padding-bottom: 56.24%;
     }
 
     .portfolio .item.big_w .thumb img
@@ -560,7 +647,58 @@
         font-size: 18px;
         line-height: 24px;
     }
+
+
+
+    /*-----------
+        Modal
+    -----------*/
+    .lock .modal
+    {
+        width: 100%;
+    }
+
+
+    .modal_title
+    {
+        margin-bottom: 52px;
+    }
+
+
+    .modal .text
+    {
+        font-size: 24px;
+        line-height: 34px;
+
+        width: 500px;
+    }
+
+
+    .modal .contacts .email
+    {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+
+    .modal .contacts .links
+    {
+        margin-top: 40px;
+    }
+
+    .modal .contacts .links a
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+    .modal .form
+    {
+        margin-top: 72px;
+    }
 }
+
 
 
 @media print,
@@ -572,6 +710,40 @@
     .cont
     {
         padding: 0 28px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns
+    {
+        --form_columns_offset: 20px;
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .form .input
+    {
+        font-size: 17px;
+
+        height: 56px;
+    }
+
+
+    .form textarea
+    {
+        font-size: 17px;
+        line-height: 23px;
+
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
 
@@ -812,6 +984,44 @@
         font-size: 17px;
         line-height: 23px;
     }
+
+
+
+    /*-----------
+        Modal
+    -----------*/
+    .modal_title
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .modal .text
+    {
+        font-size: 21px;
+        line-height: 29px;
+
+        width: 340px;
+    }
+
+
+    .modal .contacts .email
+    {
+        font-size: 21px;
+        line-height: 29px;
+    }
+
+
+    .modal .contacts .links
+    {
+        margin-top: 32px;
+    }
+
+    .modal .contacts .links a
+    {
+        font-size: 17px;
+        line-height: 25px;
+    }
 }
 
 
@@ -825,6 +1035,45 @@
     .cont
     {
         padding: 0 20px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .columns > *
+    {
+        width: calc(100% - var(--form_columns_offset));
+    }
+
+
+    .form .line
+    {
+        margin-bottom: 16px;
+    }
+
+
+    .form .input
+    {
+        font-size: 16px;
+
+        height: 52px;
+    }
+
+
+    .form textarea
+    {
+        font-size: 16px;
+        line-height: 22px;
+
+        height: 132px;
+    }
+
+
+    .form .submit_btn
+    {
+        font-size: 17px;
     }
 
 
@@ -1134,6 +1383,57 @@
         margin-top: 15px;
         margin-left: 0;
     }
+
+
+
+    /*-----------
+        Modal
+    -----------*/
+    .modal
+    {
+        padding: 32px;
+    }
+
+
+    .modal_title
+    {
+        margin-bottom: 32px;
+    }
+
+
+    .modal .text
+    {
+        font-size: 19px;
+        line-height: 28px;
+
+        width: 100%;
+    }
+
+
+    .modal .contacts
+    {
+        width: 100%;
+        margin-top: 28px;
+    }
+
+
+    .modal .contacts .email
+    {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+
+    .modal .contacts .links
+    {
+        margin-top: 28px;
+    }
+
+
+    .modal .form
+    {
+        margin-top: 52px;
+    }
 }
 
 
@@ -1295,5 +1595,41 @@
     {
         width: 100%;
         margin-left: 0;
+    }
+
+
+
+    /*-----------
+        Modal
+    -----------*/
+    .modal
+    {
+        padding: 32px 24px;
+    }
+
+
+    .modal .contacts
+    {
+        width: 100%;
+        margin-top: 28px;
+    }
+
+
+    .modal .contacts .email
+    {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+
+    .modal .contacts .links
+    {
+        margin-top: 28px;
+    }
+
+
+    .modal .form
+    {
+        margin-top: 52px;
     }
 }

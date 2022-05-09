@@ -109,6 +109,73 @@ document.addEventListener("DOMContentLoaded", function () {
 			document.documentElement.style.setProperty('--bg', '#fff')
 		})
 	})
+
+
+	// Всплывающие окна
+	let modal = document.querySelector('.modal'),
+		closeButton = document.querySelector('.modal .close_btn'),
+		modalButtons = document.querySelectorAll('.modal_btn')
+
+	modalButtons.forEach(function (modalButton) {
+		modalButton.addEventListener('click', function (e) {
+			modalOpen(modal)
+		})
+	})
+
+	closeButton.addEventListener('click', function (e) {
+		modalClose()
+	})
+
+	modal.addEventListener('click', function (e) {
+		if (!document.querySelector('.modal_data').contains(e.target)) {
+			modalClose()
+		}
+	})
+
+
+	function modalOpen(curentModal) {
+		curentModal.classList.add('open')
+		document.body.classList.add('lock')
+	}
+
+	function modalClose() {
+		document.querySelector('.modal.open').classList.remove('open')
+		document.body.classList.remove('lock')
+	}
+
+
+	// Впадающий список в форме
+	let dropInputs = document.querySelectorAll('.form .input[readonly]')
+
+	dropInputs.forEach(function (input) {
+		input.addEventListener('click', function (e) {
+			e.preventDefault()
+
+			input.closest('.line').classList.add('dropdown_open')
+		})
+	})
+
+	document.addEventListener('click', function (e) {
+		if (!document.querySelector('.with_dropdown').contains(e.target)) {
+			let dropDowns = document.querySelectorAll('.form .with_dropdown')
+
+			dropDowns.forEach(function (line) {
+				line.classList.remove('dropdown_open')
+			})
+		}
+	})
+
+	// Впадающий список в форме - Выбор варианта
+	let dropValues = document.querySelectorAll('.form .dropdown .value')
+
+	dropValues.forEach(function (value) {
+		value.addEventListener('click', function (e) {
+			e.preventDefault()
+
+			value.closest('.line').classList.remove('dropdown_open')
+			value.closest('.line').querySelector('.input').value = value.textContent
+		})
+	})
 })
 
 

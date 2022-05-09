@@ -12,6 +12,11 @@ header
     pointer-events: none;
 }
 
+.lock header
+{
+    width: calc(100% - var(--scroll_width));
+}
+
 
 header .cont
 {
@@ -101,7 +106,7 @@ header .back_link a:hover:before
 
 
 
-header .feedback_link
+header .feedback_btn
 {
     color: #252525;
     font-size: 15px;
@@ -115,8 +120,7 @@ header .feedback_link
 
     padding: 13px;
 
-    transition: .2s linear;
-    text-decoration: none;
+    transition: color .2s linear, border-color .2s linear;
     letter-spacing: -.01em;
     pointer-events: auto;
 
@@ -128,7 +132,7 @@ header .feedback_link
     justify-content: flex-start;
 }
 
-header .feedback_link:before
+header .feedback_btn:before
 {
     position: absolute;
     z-index: -1;
@@ -148,7 +152,7 @@ header .feedback_link:before
     background: #ef7800;
 }
 
-header .feedback_link .icon
+header .feedback_btn .icon
 {
     color: #ef7800;
 
@@ -158,29 +162,29 @@ header .feedback_link .icon
     height: 24px;
     margin-left: 10px;
 
-    transition: .2s linear;
+    transition: transform .2s linear, color .2s linear;
 }
 
 
-header .feedback_link:hover
+header .feedback_btn:hover
 {
     color: #fff;
 
     border-color: #ef7800;
 }
 
-header .feedback_link:hover:before
+header .feedback_btn:hover:before
 {
     width: 100%;
 
     opacity: 1;
 }
 
-header .feedback_link:hover .icon
+header .feedback_btn:hover .icon
 {
     color: #fff;
 
-    transition: .2s linear, color .2s linear .1s;
+    transition: transform .2s linear, color .2s linear .1s;
     transform: translate(4px, -4px);
 }
 
@@ -191,7 +195,7 @@ header.fixed
     padding: 20px 0;
 }
 
-header.fixed .feedback_link
+header.fixed .feedback_btn
 {
     background: var(--bg);
 }
@@ -219,6 +223,11 @@ header.fixed .feedback_link
         padding: 24px 0;
     }
 
+    .lock header
+    {
+        width: 100%;
+    }
+
 
     header .back_link
     {
@@ -226,7 +235,7 @@ header.fixed .feedback_link
     }
 
 
-    header .feedback_link
+    header .feedback_btn
     {
         padding: 11px 19px;
     }
@@ -272,7 +281,7 @@ header.fixed .feedback_link
     }
 
 
-    header .feedback_link
+    header .feedback_btn
     {
         font-size: 14px;
         line-height: 22px;
@@ -280,7 +289,7 @@ header.fixed .feedback_link
         padding: 7px 15px;
     }
 
-    header .feedback_link .icon
+    header .feedback_btn .icon
     {
         width: 22px;
         height: 22px;
@@ -316,7 +325,7 @@ header.fixed .feedback_link
     }
 
 
-    header .feedback_link
+    header .feedback_btn
     {
         font-size: 8.75px;
         line-height: 12px;
@@ -324,7 +333,7 @@ header.fixed .feedback_link
         padding: 7px;
     }
 
-    header .feedback_link .icon
+    header .feedback_btn .icon
     {
         width: 14px;
         height: 14px;
