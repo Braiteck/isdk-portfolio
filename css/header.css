@@ -146,6 +146,7 @@ header .feedback_btn:before
 
     content: '';
     transition: .2s linear;
+    transition-property: width, opacity;
     pointer-events: none;
 
     opacity: 0;

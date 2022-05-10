@@ -237,7 +237,7 @@
     }
 
 
-    footer .feedback_link
+    footer .feedback_btn
     {
         font-size: 18px;
         line-height: 24px;
@@ -605,12 +605,12 @@
     }
 
 
-    footer .feedback_link
+    footer .feedback_btn
     {
         width: 472px;
     }
 
-    footer .feedback_link .icon
+    footer .feedback_btn .icon
     {
         width: 36px;
         height: 36px;
@@ -1319,14 +1319,14 @@
     }
 
 
-    footer .feedback_link
+    footer .feedback_btn
     {
         width: 100%;
         margin-top: 50px;
         padding: 11px 15px;
     }
 
-    footer .feedback_link .icon
+    footer .feedback_btn .icon
     {
         margin-right: 28px;
     }

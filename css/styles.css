@@ -959,6 +959,7 @@ header .feedback_btn
 
     display: flex;
 
+    width: 100%;
     padding: 29px;
 
     transition: color .2s linear, border-color .2s linear;
@@ -1461,7 +1462,7 @@ header .feedback_btn
 
     width: 100%;
 
-    transition: .2s linear;
+    transition: color .2s linear, transform .2s linear;
 }
 
 .next_case .link:hover .next
@@ -1550,7 +1551,7 @@ footer .top
 
 footer .top .row
 {
-    width: 73.6%;
+    width: 75%;
     max-width: 100%;
     margin-left: auto;
 
@@ -1646,7 +1647,7 @@ footer .feedback_btn
 
     display: flex;
 
-    width: 636px;
+    width: calc(66.666% - 12px);
     max-width: 100%;
     padding: 14px 23px;
 
@@ -1817,7 +1818,7 @@ footer .socials a:hover span:after
 
 footer .contacts_wrap
 {
-    width: 73.6%;
+    width: 75%;
     max-width: 100%;
     margin-left: auto;
 }
@@ -2247,4 +2248,27 @@ footer .links a:hover
 .modal .form
 {
     margin-top: 100px;
+}
+
+
+
+#success_modal .icon
+{
+    display: block;
+
+    width: 62px;
+    height: 61px;
+    margin: 0 auto 40px;
+}
+
+
+#success_modal .title
+{
+    color: #ef7800;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 34px;
+
+    text-align: center;
+    letter-spacing: -1px;
 }

@@ -112,24 +112,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 	// Всплывающие окна
-	let modal = document.querySelector('.modal'),
-		closeButton = document.querySelector('.modal .close_btn'),
+	let modals = document.querySelectorAll('.modal'),
+		closeButtons = document.querySelectorAll('.modal .close_btn'),
 		modalButtons = document.querySelectorAll('.modal_btn')
 
 	modalButtons.forEach(function (modalButton) {
 		modalButton.addEventListener('click', function (e) {
-			modalOpen(modal)
+			modalOpen(document.getElementById(modalButton.getAttribute('data-modal')))
 		})
 	})
 
-	closeButton.addEventListener('click', function (e) {
-		modalClose()
+	closeButtons.forEach(function (closeButton) {
+		closeButton.addEventListener('click', function (e) {
+			modalClose()
+		})
 	})
 
-	modal.addEventListener('click', function (e) {
-		if (!document.querySelector('.modal_data').contains(e.target)) {
-			modalClose()
-		}
+	modals.forEach(function (modal) {
+		modal.addEventListener('click', function (e) {
+			if (!document.querySelector('.modal_data').contains(e.target)) {
+				modalClose()
+			}
+		})
 	})
 
 
@@ -176,6 +180,18 @@ document.addEventListener("DOMContentLoaded", function () {
 			value.closest('.line').querySelector('.input').value = value.textContent
 		})
 	})
+
+
+	// Отправка формы
+	let feedbackForm = document.querySelector('#feedback_modal form')
+
+	feedbackForm.addEventListener('submit', function (e) {
+		e.preventDefault()
+
+		modalClose()
+		modalOpen(document.getElementById('success_modal'))
+	})
+
 })
 
 
