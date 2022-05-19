@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#EF7800">
+		<meta name="theme-color" content="#EF7800">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/header.css" async>
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<!-- Иконки сайта -->
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#ef7800">
+		<link rel="shortcut icon" href="images/favicon.ico">
+
+		<!-- Стии первого блока -->
+		<style>
+			.case_head
+			{
+			    margin-bottom: 40px;
+			    padding-top: 149px;
+
+			    text-align: center;
+			}
+
+			.case_head.blue
+			{
+			    background: #ebf5ff;
+			}
+
+			.case_head.pink
+			{
+			    background: #feebea;
+			}
+
+
+			.case_head .pre_title
+			{
+			    color: #5c5c5c;
+			    font-size: 29px;
+			    line-height: 38px;
+
+			    margin-bottom: 30px;
+
+			    letter-spacing: -1px;
+			}
+
+
+			.case_head .title
+			{
+			    font-size: 70px;
+			    font-weight: 800;
+			    line-height: 80px;
+
+			    margin-bottom: 48px;
+
+			    letter-spacing: -2px;
+
+			    font-feature-settings: 'ss01' on;
+			}
+
+
+			.case_head img
+			{
+			    display: block;
+
+			    max-width: 80%;
+			    margin: 0 auto;
+			}
+
+
+
+			@media print, (max-width: 1439px)
+			{
+			    .case_head
+			    {
+			        margin-bottom: 28px;
+			        padding-top: 132px;
+			    }
+
+
+			    .case_head .pre_title
+			    {
+			        font-size: 28px;
+			        line-height: 38px;
+
+			        margin-bottom: 28px;
+			    }
+
+
+			    .case_head .title
+			    {
+			        font-size: 64px;
+			    }
+			}
+
+
+
+			@media print, (max-width: 1279px)
+			{
+			    .case_head .pre_title
+			    {
+			        font-size: 26px;
+			        line-height: 36px;
+			    }
+
+
+			    .case_head .title
+			    {
+			        font-size: 60px;
+			        line-height: 72px;
+			    }
+			}
+
+
+
+			@media print, (max-width: 1023px)
+			{
+			    .case_head .pre_title
+			    {
+			        font-size: 22px;
+			        line-height: 30px;
+
+			        margin-bottom: 20px;
+			    }
+
+
+			    .case_head .title
+			    {
+			        font-size: 52px;
+			        line-height: 64px;
+			    }
+
+
+			    .case_head img
+			    {
+			        max-width: 90%;
+			    }
+			}
+
+
+
+			@media print, (max-width: 767px)
+			{
+			    .case_head
+			    {
+			        margin-bottom: 24px;
+			        padding-top: 116px;
+			    }
+
+
+			    .case_head .pre_title
+			    {
+			        font-size: 20px;
+			        line-height: 28px;
+
+			        margin-bottom: 16px;
+			    }
+
+
+			    .case_head .title
+			    {
+			        font-size: 44px;
+			        line-height: 56px;
+			    }
+
+
+			    .case_head img
+			    {
+			        max-width: 95%;
+			    }
+			}
+
+
+
+			@media print, (max-width: 479px)
+			{
+			    .case_head
+			    {
+			        padding-top: 100px;
+			    }
+
+
+			    .case_head .pre_title
+			    {
+			        font-size: 19px;
+			        line-height: 27px;
+			    }
+
+
+			    .case_head .title
+			    {
+			        font-size: 40px;
+			        line-height: 52px;
+			    }
+
+
+			    .case_head img
+			    {
+			        max-width: 100%;
+			    }
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" alt="" width="65" height="31" decoding="async">
+						</a>
+
+						<div class="back_link">
+							<a href="/">Back to projects</a>
+						</div>
+
+						<button class="feedback_btn modal_btn" data-modal="feedback_modal">
+							<span>Get in touch on isdk.com</span>
+							<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.79289 15.7929C6.40237 16.1834 6.40237 16.8166 6.79289 17.2071C7.18342 17.5976 7.81658 17.5976 8.20711 17.2071L6.79289 15.7929ZM18.5 6.5C18.5 5.94771 18.0523 5.5 17.5 5.5L8.5 5.5C7.94772 5.5 7.5 5.94771 7.5 6.5C7.5 7.05228 7.94772 7.5 8.5 7.5L16.5 7.5L16.5 15.5C16.5 16.0523 16.9477 16.5 17.5 16.5C18.0523 16.5 18.5 16.0523 18.5 15.5L18.5 6.5ZM8.20711 17.2071L18.2071 7.20711L16.7929 5.79289L6.79289 15.7929L8.20711 17.2071Z" fill="currentColor"/></svg>
+						</button>
+					</div>
+				</header>
+
+
+				<section class="case_head pink">
+					<div class="cont">
+						<div class="pre_title">Victoria Quant</div>
+
+						<div class="title">V-Quant<br> Trade Studio Website</div>
+
+						<div class="image">
+							<picture>
+								<source srcset="images/tmp/case2_head_img_480.webp" type="image/webp" media="(max-width: 479px)">
+								<source srcset="images/tmp/case2_head_img_768.webp" type="image/webp" media="(max-width: 767px)">
+								<source srcset="images/tmp/case2_head_img_1024.webp" type="image/webp" media="(max-width: 1023px)">
+								<source srcset="images/tmp/case2_head_img.webp" type="image/webp">
+
+								<source srcset="images/tmp/case2_head_img_480.png" type="image/png" media="(max-width: 479px)">
+								<source srcset="images/tmp/case2_head_img_768.png" type="image/png" media="(max-width: 767px)">
+								<source srcset="images/tmp/case2_head_img_1024.png" type="image/png" media="(max-width: 1023px)">
+								<source srcset="images/tmp/case2_head_img.png" type="image/png">
+
+								<img data-src="images/tmp/case2_head_img.png" alt="" class="lazyload" decoding="async">
+							</picture>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="case_data">
+					<div class="cont">
+						<section class="info">
+							<div class="year">2021</div>
+							<div class="category">Website, Custom Development</div>
+						</section>
+
+
+						<section class="info_block">
+							<div class="head">
+								<div class="title">Air cargo transport made simple</div>
+
+								<div class="desc">
+									<div class="big_w">We designed and developed web cargo booking service using an open SaaS-platform to attract new partners – both end customers of cargo services and airlines and their agents providing transportation services</div>
+								</div>
+							</div>
+
+							<div class="images">
+								<div class="image full_w">
+									<picture>
+										<source srcset="images/tmp/case2_info_block_img_480.webp" type="image/webp" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img_768.webp" type="image/webp" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img_1024.webp" type="image/webp" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img_1280.webp" type="image/webp" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img.webp" type="image/webp">
+
+										<source srcset="images/tmp/case2_info_block_img_480.jpg" type="image/jpeg" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img_768.jpg" type="image/jpeg" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img_1024.jpg" type="image/jpeg" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img_1280.jpg" type="image/jpeg" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img.jpg" type="image/jpeg">
+
+										<img data-src="images/tmp/case2_info_block_img.jpg" alt="" class="lazyload" decoding="async">
+									</picture>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="info_block">
+							<div class="images full_w">
+								<div class="image full_w">
+									<picture>
+										<source srcset="images/tmp/case2_info_block_img2_480.webp" type="image/webp" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img2_768.webp" type="image/webp" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img2_1024.webp" type="image/webp" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img2_1280.webp" type="image/webp" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img2.webp" type="image/webp">
+
+										<source srcset="images/tmp/case2_info_block_img2_480.jpg" type="image/jpeg" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img2_768.jpg" type="image/jpeg" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img2_1024.jpg" type="image/jpeg" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img2_1280.jpg" type="image/jpeg" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img2.jpg" type="image/jpeg">
+
+										<img data-src="images/tmp/case2_info_block_img2.jpg" alt="" class="lazyload" decoding="async">
+									</picture>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="info_block">
+							<div class="head">
+								<div class="title">As easy as buying<br> a ticket</div>
+
+								<div class="desc">
+									<div>The service will provide you with a list of airlines and flights with current prices for your cargo. You can choose the best option and send a booking request.</div>
+								</div>
+							</div>
+
+							<div class="images">
+								<div class="image full_w">
+									<picture>
+										<source srcset="images/tmp/case2_info_block_img3_480.webp" type="image/webp" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img3_768.webp" type="image/webp" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img3_1024.webp" type="image/webp" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img3_1280.webp" type="image/webp" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img3.webp" type="image/webp">
+
+										<source srcset="images/tmp/case2_info_block_img3_480.jpg" type="image/jpeg" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img3_768.jpg" type="image/jpeg" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img3_1024.jpg" type="image/jpeg" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img3_1280.jpg" type="image/jpeg" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img3.jpg" type="image/jpeg">
+
+										<img data-src="images/tmp/case2_info_block_img3.jpg" alt="" class="lazyload" decoding="async">
+									</picture>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="info_block">
+							<div class="head">
+								<div class="title">Deal with paperwork<br> in seconds</div>
+
+								<div class="desc">
+									<div>The service can generate air waybills in PDF or FWB and FHL messages in only a few clicks.</div>
+								</div>
+							</div>
+
+							<div class="images">
+								<div class="image full_w">
+									<picture>
+										<source srcset="images/tmp/case2_info_block_img4_480.webp" type="image/webp" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img4_768.webp" type="image/webp" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img4_1024.webp" type="image/webp" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img4_1280.webp" type="image/webp" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img4.webp" type="image/webp">
+
+										<source srcset="images/tmp/case2_info_block_img4_480.jpg" type="image/jpeg" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img4_768.jpg" type="image/jpeg" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img4_1024.jpg" type="image/jpeg" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img4_1280.jpg" type="image/jpeg" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img4.jpg" type="image/jpeg">
+
+										<img data-src="images/tmp/case2_info_block_img4.jpg" alt="" class="lazyload" decoding="async">
+									</picture>
+								</div>
+
+								<div class="image">
+									<picture>
+										<source srcset="images/tmp/case2_info_block_img5_1024.webp" type="image/webp" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img5_768.webp" type="image/webp" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img5_1024.webp" type="image/webp" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img5_1280.webp" type="image/webp" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img5.webp" type="image/webp">
+
+										<source srcset="images/tmp/case2_info_block_img5_1024.jpg" type="image/jpeg" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img5_768.jpg" type="image/jpeg" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img5_1024.jpg" type="image/jpeg" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img5_1280.jpg" type="image/jpeg" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img5.jpg" type="image/jpeg">
+
+										<img data-src="images/tmp/case2_info_block_img5.jpg" alt="" class="lazyload" decoding="async">
+									</picture>
+								</div>
+
+								<div class="image">
+									<picture>
+										<source srcset="images/tmp/case2_info_block_img6_1024.webp" type="image/webp" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img6_768.webp" type="image/webp" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img6_1024.webp" type="image/webp" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img6_1280.webp" type="image/webp" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img6.webp" type="image/webp">
+
+										<source srcset="images/tmp/case2_info_block_img6_1024.jpg" type="image/jpeg" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img6_768.jpg" type="image/jpeg" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img6_1024.jpg" type="image/jpeg" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img6_1280.jpg" type="image/jpeg" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img6.jpg" type="image/jpeg">
+
+										<img data-src="images/tmp/case2_info_block_img6.jpg" alt="" class="lazyload" decoding="async">
+									</picture>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="info_block">
+							<div class="head">
+								<div class="desc">
+									<div>You can choose the desired point of departure and destination, including airports nearby and specify the parameters of each cargo</div>
+								</div>
+							</div>
+
+							<div class="images full_w">
+								<div class="image full_w">
+									<picture>
+										<source srcset="images/tmp/case2_info_block_img7_480.webp" type="image/webp" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img7_768.webp" type="image/webp" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img7_1024.webp" type="image/webp" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img7_1280.webp" type="image/webp" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img7.webp" type="image/webp">
+
+										<source srcset="images/tmp/case2_info_block_img7_480.jpg" type="image/jpeg" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img7_768.jpg" type="image/jpeg" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img7_1024.jpg" type="image/jpeg" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img7_1280.jpg" type="image/jpeg" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img7.jpg" type="image/jpeg">
+
+										<img data-src="images/tmp/case2_info_block_img7.jpg" alt="" class="lazyload" decoding="async">
+									</picture>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="info_block">
+							<div class="head">
+								<div class="title">Be in control of every process</div>
+
+								<div class="desc">
+									<div>Personal workspace allows you to manage bookings and requests history, organization info, payment methods and track cargos.</div>
+								</div>
+							</div>
+
+							<div class="images">
+								<div class="image full_w">
+									<picture>
+										<source srcset="images/tmp/case2_info_block_img8_480.webp" type="image/webp" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img8_768.webp" type="image/webp" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img8_1024.webp" type="image/webp" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img8_1280.webp" type="image/webp" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img8.webp" type="image/webp">
+
+										<source srcset="images/tmp/case2_info_block_img8_480.jpg" type="image/jpeg" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img8_768.jpg" type="image/jpeg" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img8_1024.jpg" type="image/jpeg" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img8_1280.jpg" type="image/jpeg" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img8.jpg" type="image/jpeg">
+
+										<img data-src="images/tmp/case2_info_block_img8.jpg" alt="" class="lazyload" decoding="async">
+									</picture>
+								</div>
+
+								<div class="image full_w">
+									<picture>
+										<source srcset="images/tmp/case2_info_block_img9_480.webp" type="image/webp" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img9_768.webp" type="image/webp" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img9_1024.webp" type="image/webp" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img9_1280.webp" type="image/webp" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img9.webp" type="image/webp">
+
+										<source srcset="images/tmp/case2_info_block_img9_480.jpg" type="image/jpeg" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img9_768.jpg" type="image/jpeg" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img9_1024.jpg" type="image/jpeg" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img9_1280.jpg" type="image/jpeg" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img9.jpg" type="image/jpeg">
+
+										<img data-src="images/tmp/case2_info_block_img9.jpg" alt="" class="lazyload" decoding="async">
+									</picture>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="info_block">
+							<div class="images">
+								<div class="image full_w">
+									<picture>
+										<source srcset="images/tmp/case2_info_block_img12_480.webp" type="image/webp" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img12_768.webp" type="image/webp" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img12_1024.webp" type="image/webp" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img12_1280.webp" type="image/webp" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img12.webp" type="image/webp">
+
+										<source srcset="images/tmp/case2_info_block_img12_480.jpg" type="image/jpeg" media="(max-width: 479px)">
+										<source srcset="images/tmp/case2_info_block_img12_768.jpg" type="image/jpeg" media="(max-width: 767px)">
+										<source srcset="images/tmp/case2_info_block_img12_1024.jpg" type="image/jpeg" media="(max-width: 1023px)">
+										<source srcset="images/tmp/case2_info_block_img12_1280.jpg" type="image/jpeg" media="(max-width: 1279px)">
+										<source srcset="images/tmp/case2_info_block_img12.jpg" type="image/jpeg">
+
+										<img data-src="images/tmp/case2_info_block_img12.jpg" alt="" class="lazyload" decoding="async">
+									</picture>
+								</div>
+							</div>
+						</section>
+
+
+						<section class="links">
+							<div class="link">
+								<div class="name">Read the full story</div>
+
+								<a href="/" target="_blank" rel="noopener">
+									<span>ISDK Blog</span>
+									<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.79289 15.7929C6.40237 16.1834 6.40237 16.8166 6.79289 17.2071C7.18342 17.5976 7.81658 17.5976 8.20711 17.2071L6.79289 15.7929ZM18.5 6.5C18.5 5.94771 18.0523 5.5 17.5 5.5L8.5 5.5C7.94772 5.5 7.5 5.94771 7.5 6.5C7.5 7.05228 7.94772 7.5 8.5 7.5L16.5 7.5L16.5 15.5C16.5 16.0523 16.9477 16.5 17.5 16.5C18.0523 16.5 18.5 16.0523 18.5 15.5L18.5 6.5ZM8.20711 17.2071L18.2071 7.20711L16.7929 5.79289L6.79289 15.7929L8.20711 17.2071Z" fill="currentColor"/></svg>
+								</a>
+							</div>
+
+							<div class="link">
+								<div class="name">Visit the project website</div>
+
+								<a href="/" target="_blank" rel="noopener nofollow">
+									<span>v-quant.com</span>
+									<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.79289 15.7929C6.40237 16.1834 6.40237 16.8166 6.79289 17.2071C7.18342 17.5976 7.81658 17.5976 8.20711 17.2071L6.79289 15.7929ZM18.5 6.5C18.5 5.94771 18.0523 5.5 17.5 5.5L8.5 5.5C7.94772 5.5 7.5 5.94771 7.5 6.5C7.5 7.05228 7.94772 7.5 8.5 7.5L16.5 7.5L16.5 15.5C16.5 16.0523 16.9477 16.5 17.5 16.5C18.0523 16.5 18.5 16.0523 18.5 15.5L18.5 6.5ZM8.20711 17.2071L18.2071 7.20711L16.7929 5.79289L6.79289 15.7929L8.20711 17.2071Z" fill="currentColor"/></svg>
+								</a>
+							</div>
+						</section>
+					</div>
+				</section>
+
+
+				<section class="next_case">
+					<div class="cont">
+						<a href="/" class="link">
+							<svg class="next" viewBox="0 0 1297 335" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 0V335C309.284 335 26.373 335 335.657 335V0H168.788V123.648L0 0Z" fill="currentColor"/>
+								<path d="M343.47 0V335H621.586V221.896H552.057V207.518H621.586V127.003H552.057V112.625H621.586V0H343.47Z" fill="currentColor"/>
+								<path d="M629.582 0L723.566 167.26L629.582 335C884.682 335 725.484 335 985.379 335L891.395 167.26L985.379 0C719.73 0 889.956 0 629.582 0Z" fill="currentColor"/>
+								<path d="M1231.79 168.219H1297V0H994.429V168.219H1063.96V335H1231.79V168.219Z" fill="currentColor"/>
+							</svg>
+
+							<div class="data">
+								<div class="company">Harman & JBL</div>
+								<div class="name">Marketing and eCommerce Setup</div>
+
+								<picture>
+									<source srcset="images/tmp/next_case_thumb_480.webp" type="image/webp" media="(max-width: 479px)">
+									<source srcset="images/tmp/next_case_thumb_768.webp" type="image/webp" media="(max-width: 767px)">
+									<source srcset="images/tmp/next_case_thumb_1024.webp" type="image/webp" media="(max-width: 1023px)">
+									<source srcset="images/tmp/next_case_thumb_1280.webp" type="image/webp" media="(max-width: 1279px)">
+									<source srcset="images/tmp/next_case_thumb.webp" type="image/webp">
+
+									<source srcset="images/tmp/next_case_thumb_480.jpg" type="image/jpeg" media="(max-width: 479px)">
+									<source srcset="images/tmp/next_case_thumb_768.jpg" type="image/jpeg" media="(max-width: 767px)">
+									<source srcset="images/tmp/next_case_thumb_1024.jpg" type="image/jpeg" media="(max-width: 1023px)">
+									<source srcset="images/tmp/next_case_thumb_1280.jpg" type="image/jpeg" media="(max-width: 1279px)">
+									<source srcset="images/tmp/next_case_thumb.jpg" type="image/jpeg">
+
+									<img data-src="images/tmp/next_case_thumb.jpg" alt="" class="thumb lazyload" decoding="async">
+								</picture>
+							</div>
+						</a>
+					</div>
+				</section>
+
+
+				<section class="action_block">
+					<div class="cont">
+						<button class="feedback_btn modal_btn" data-modal="feedback_modal">
+							<img data-src="images/ic_feedback.svg" alt="" class="icon lazyload" width="40" height="40" decoding="async">
+							<span>Get in touch to<br> discuss your case</span>
+						</button>
+					</div>
+				</section>
+
+
+				<section class="about_block">
+					<div class="cont row">
+						<div class="logo">
+							<img data-src="images/about_isdk_logo.svg" alt="" class="lazyload" width="635" height="336" decoding="async">
+						</div>
+
+						<div class="data">
+							<div class="title">Explore</div>
+
+							<div class="desc">more case studies, our services, clients’ feedback and development blog</div>
+
+							<a href="/" class="link" target="_balnk" rel="noopener">
+								<span>isdk.pro</span>
+								<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.79289 15.7929C6.40237 16.1834 6.40237 16.8166 6.79289 17.2071C7.18342 17.5976 7.81658 17.5976 8.20711 17.2071L6.79289 15.7929ZM18.5 6.5C18.5 5.94771 18.0523 5.5 17.5 5.5L8.5 5.5C7.94772 5.5 7.5 5.94771 7.5 6.5C7.5 7.05228 7.94772 7.5 8.5 7.5L16.5 7.5L16.5 15.5C16.5 16.0523 16.9477 16.5 17.5 16.5C18.0523 16.5 18.5 16.0523 18.5 15.5L18.5 6.5ZM8.20711 17.2071L18.2071 7.20711L16.7929 5.79289L6.79289 15.7929L8.20711 17.2071Z" fill="currentColor"/></svg>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+
+
+			<footer>
+				<div class="top">
+					<div class="cont">
+						<div class="row">
+							<div class="email">
+								<a href="mailto:info@isdk.pro">
+									<span>info@isdk.pro</span>
+								</a>
+							</div>
+
+							<button class="feedback_btn modal_btn" data-modal="feedback_modal">
+								<img data-src="images/ic_feedback.svg" alt="" class="icon lazyload" width="40" height="40" decoding="async">
+
+								<span>Contact via pop-up form</span>
+
+								<svg class="arrow" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.79289 15.7929C6.40237 16.1834 6.40237 16.8166 6.79289 17.2071C7.18342 17.5976 7.81658 17.5976 8.20711 17.2071L6.79289 15.7929ZM18.5 6.5C18.5 5.94771 18.0523 5.5 17.5 5.5L8.5 5.5C7.94772 5.5 7.5 5.94771 7.5 6.5C7.5 7.05228 7.94772 7.5 8.5 7.5L16.5 7.5L16.5 15.5C16.5 16.0523 16.9477 16.5 17.5 16.5C18.0523 16.5 18.5 16.0523 18.5 15.5L18.5 6.5ZM8.20711 17.2071L18.2071 7.20711L16.7929 5.79289L6.79289 15.7929L8.20711 17.2071Z" fill="currentColor"/></svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="info">
+					<div class="cont row">
+						<div class="col_left">
+							<div class="logo">
+								<img src="images/logo.svg" alt="" width="65" height="31" decoding="async">
+							</div>
+
+							<div class="socials">
+								<div><a href="https://isdk.pro" target="_blank" rel="noopener">
+									<span>ISDK.pro</span>
+								</a></div>
+
+								<div><a href="https://www.behance.net/isdk" target="_blank" rel="noopener nofollow">
+									<span>Behance</span>
+								</a></div>
+
+								<div><a href="https://www.linkedin.com/company/isdk" target="_blank" rel="noopener nofollow">
+									<span>LinkedIn</span>
+								</a></div>
+							</div>
+						</div>
+
+						<div class="contacts_wrap">
+							<div class="row">
+								<div class="contacts">
+									<div class="country">Germany</div>
+
+									<div class="city">Berlin</div>
+
+									<div class="phone">
+										<a href="tel:4915233977274">
+											<span>49 15233977274</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="contacts">
+									<div class="country">Baltic</div>
+
+									<div class="city">Riga, L atvia</div>
+
+									<div class="phone">
+										<a href="tel:37127869927">
+											<span>371 27869927</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="contacts">
+									<div class="country">Czech</div>
+
+									<div class="city">Brno</div>
+
+									<div class="phone">
+										<a href="tel:+420737138537">
+											<span>+420 737 138 537</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="contacts">
+									<div class="country">Benelux</div>
+
+									<div class="city">Antwerp, Belgium</div>
+
+									<div class="phone">
+										<a href="tel:3243460180">
+											<span>32 43460180</span>
+										</a>
+									</div>
+								</div>
+
+								<div class="contacts">
+									<div class="country">USA</div>
+
+									<div class="city">Austin, TX</div>
+
+									<div class="phone">
+										<a href="tel:4915233977274">
+											<span>49 15233977274</span>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="bottom">
+					<div class="cont row">
+						<div class="copyright">ISDK &copy;2010-2020, All rights reserved.</div>
+
+						<div class="links">
+							<div><a href="/">Cookies & Privacy policy</a></div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+
+		<section class="modal" id="feedback_modal">
+			<div class="modal_data">
+				<button class="close_btn"></button>
+
+				<div class="modal_title">Contact Us</div>
+
+				<div class="row">
+					<div class="text">We look forward to hearing from you and will respond by email in no longer than one business day</div>
+
+					<div class="contacts">
+						<div class="email">
+							<a href="mailto:info@isdk.pro">
+								<span>info@isdk.pro</span>
+							</a>
+						</div>
+
+						<div class="links">
+							<a href="https://isdk.pro" target="_blank" rel="noopener">
+								<span>ISDK.pro</span>
+							</a>
+
+							<a href="https://www.behance.net/isdk" target="_blank" rel="noopener nofollow">
+								<span>Behance</span>
+							</a>
+
+							<a href="https://www.linkedin.com/company/isdk" target="_blank" rel="noopener nofollow">
+								<span>LinkedIn</span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<form action="" class="form">
+					<div class="columns">
+						<div class="line">
+							<div class="field">
+								<input type="text" name="" value="Get an answer by email" class="input" readonly>
+
+								<div class="drop_arrow"></div>
+
+								<div class="dropdown">
+									<div><button type="button" class="value selected">Get an answer by email</button></div>
+									<div><button type="button" class="value">Вариант 2</button></div>
+									<div><button type="button" class="value">Вариант 3</button></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="line">
+							<div class="field">
+								<input type="email" name="" value="" class="input" placeholder="Email address">
+							</div>
+						</div>
+					</div>
+
+					<div class="line">
+						<div class="field">
+							<textarea name="" placeholder="Type in your message or question"></textarea>
+						</div>
+					</div>
+
+					<div class="submit">
+						<button type="submit" class="submit_btn" disabled>Send a message</button>
+					</div>
+
+					<div class="agree">
+						By submitting this form, you agree to the <a href="/" target="_blank" rel="noopener"><span>ISDK Privacy Policy</span></a>
+					</div>
+				</form>
+			</div>
+		</section>
+
+
+		<section class="modal" id="success_modal">
+			<div class="modal_data">
+				<img data-src="images/ic_success.svg" alt="" class="icon lazyload" width="62" height="61">
+
+				<div class="title">Your message has been successfully sent</div>
+			</div>
+		</section>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/styles.css" async>
+		<link rel="stylesheet" href="css/response.css" async>
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
