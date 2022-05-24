@@ -209,9 +209,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				email: document.getElementById('input_email').value,
 				text: document.getElementById("input_text").value
 			},
-				url = "/send.php?data=" + encodeURIComponent(JSON.stringify(params))
-
-			console.log(params)
+				url = "./send.php?data=" + encodeURIComponent(JSON.stringify(params))
 
 			xhttp = new XMLHttpRequest()
 			xhttp.open('get', url, true)
