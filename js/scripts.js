@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	function scrollTracking(entries) {
 		for (const entry of entries) {
-			if (entry.intersectionRatio >= 0.2 && entry.target.getAttribute('data-src')) {
+			if (entry.intersectionRatio >= 0.2 && entry.target.getAttribute('data-src') && !entry.target.classList.contains('loaded')) {
 				entry.target.src = entry.target.getAttribute('data-src')
 				entry.target.classList.add('loaded')
 			}
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const categoriesBtns = document.querySelectorAll('.categories .btn')
 
 	categoriesBtns.forEach(element => {
-		element.addEventListener('mouseover', function () {
+		element.addEventListener('mouseover', () => {
 			setTimeout(() => {
 				let video = document.getElementById(element.getAttribute('data-video'))
 
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			})
 		})
 
-		element.addEventListener('mouseleave', function () {
+		element.addEventListener('mouseleave', () => {
 			let video = document.getElementById(element.getAttribute('data-video'))
 
 			video.classList.remove('show')
@@ -82,11 +82,11 @@ document.addEventListener("DOMContentLoaded", function () {
 			video.pause()
 		})
 
-		element.addEventListener('click', function (e) {
+		element.addEventListener('click', e => {
 			e.preventDefault()
 			e.stopPropagation()
 
-			Array.from(categoriesBtns).forEach(function (el) {
+			Array.from(categoriesBtns).forEach(el => {
 				el.classList.remove('active')
 			})
 
@@ -99,13 +99,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// Проекты - Замена фона
 	document.querySelectorAll('.portfolio .item').forEach(element => {
-		element.addEventListener('mouseover', function () {
+		element.addEventListener('mouseover', () => {
 			document.documentElement.style.setProperty('--bg', this.querySelector('.thumb').getAttribute('data-color'))
 		})
 	})
 
 	document.querySelectorAll('.portfolio .item').forEach(element => {
-		element.addEventListener('mouseleave', function () {
+		element.addEventListener('mouseleave', () => {
 			document.documentElement.style.setProperty('--bg', '#fff')
 		})
 	})
@@ -117,19 +117,19 @@ document.addEventListener("DOMContentLoaded", function () {
 		modalButtons = document.querySelectorAll('.modal_btn')
 
 	modalButtons.forEach(function (modalButton) {
-		modalButton.addEventListener('click', function (e) {
+		modalButton.addEventListener('click', e => {
 			modalOpen(document.getElementById(modalButton.getAttribute('data-modal')))
 		})
 	})
 
 	closeButtons.forEach(function (closeButton) {
-		closeButton.addEventListener('click', function (e) {
+		closeButton.addEventListener('click', e => {
 			modalClose()
 		})
 	})
 
 	modals.forEach(function (modal) {
-		modal.addEventListener('click', function (e) {
+		modal.addEventListener('click', e => {
 			if (!document.querySelector('.modal_data').contains(e.target)) {
 				modalClose()
 			}
@@ -152,14 +152,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	let dropInputs = document.querySelectorAll('.form .input[readonly]')
 
 	dropInputs.forEach(function (input) {
-		input.addEventListener('click', function (e) {
+		input.addEventListener('click', e => {
 			e.preventDefault()
 
 			input.closest('.line').classList.add('dropdown_open')
 		})
 	})
 
-	document.addEventListener('click', function (e) {
+	document.addEventListener('click', e => {
 		if (!document.querySelector('.with_dropdown').contains(e.target)) {
 			let dropDowns = document.querySelectorAll('.form .with_dropdown')
 
@@ -173,25 +173,71 @@ document.addEventListener("DOMContentLoaded", function () {
 	let dropValues = document.querySelectorAll('.form .dropdown .value')
 
 	dropValues.forEach(function (value) {
-		value.addEventListener('click', function (e) {
+		value.addEventListener('click', e => {
 			e.preventDefault()
 
 			value.closest('.line').classList.remove('dropdown_open')
 			value.closest('.line').querySelector('.input').value = value.textContent
+			value.closest('.line').querySelector('.input').setAttribute('valid', true)
+
+			checkfeedbackForm()
 		})
 	})
 
 
 	// Отправка формы
-	let feedbackForm = document.querySelector('#feedback_modal form')
+	let feedbackForm = document.querySelector('#feedback_modal form'),
+		feedbackFormErrors = true,
+		fields = feedbackForm.querySelectorAll('.input, textarea')
 
-	feedbackForm.addEventListener('submit', function (e) {
-		e.preventDefault()
+	fields.forEach(field => {
+		field.addEventListener('input', () => {
+			field.value != '' && field.value.length > 1
+				? field.setAttribute('valid', true)
+				: field.setAttribute('valid', false)
 
-		modalClose()
-		modalOpen(document.getElementById('success_modal'))
+			checkfeedbackForm()
+		})
 	})
 
+	feedbackForm.addEventListener('submit', e => {
+		e.preventDefault()
+
+		if (!feedbackFormErrors) {
+			let params = {
+				subject: document.getElementById('input_subject').value,
+				email: document.getElementById('input_email').value,
+				text: document.getElementById("input_text").value
+			},
+				url = "/send.php?data=" + encodeURIComponent(JSON.stringify(params))
+
+			console.log(params)
+
+			xhttp = new XMLHttpRequest()
+			xhttp.open('get', url, true)
+			xhttp.setRequestHeader('Content-Type', 'application/json')
+
+			xhttp.onload = function () {
+				if (xhttp.readyState == 4 && xhttp.status === 200 && xhttp.responseText) {
+					modalClose()
+					modalOpen(document.getElementById('success_modal'))
+				}
+			}
+
+			xhttp.send()
+		}
+	})
+
+
+	function checkfeedbackForm() {
+		if (feedbackForm.querySelectorAll('[valid="true"]').length == fields.length) {
+			feedbackForm.querySelector('.submit_btn').disabled = false
+			feedbackFormErrors = false
+		} else {
+			feedbackForm.querySelector('.submit_btn').disabled = true
+			feedbackFormErrors = true
+		}
+	}
 })
 
 
