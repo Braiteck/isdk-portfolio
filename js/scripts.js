@@ -21,6 +21,16 @@ document.addEventListener("DOMContentLoaded", function () {
 				entry.target.classList.add('loaded')
 			}
 
+			if (entry.intersectionRatio >= 0.2 && entry.target.localName === 'picture' && !entry.target.classList.contains('loaded')) {
+				let sources = entry.target.querySelectorAll('source'),
+					img = entry.target.querySelector('img')
+
+				sources.forEach(source => source.srcset = source.getAttribute('data-srcset'))
+				img.src = img.getAttribute('data-src')
+
+				entry.target.classList.add('loaded')
+			}
+
 			if (entry.intersectionRatio >= 0.2 && entry.target.classList.contains('animate')) {
 				entry.target.classList.add('animated')
 			}
@@ -99,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// Проекты - Замена фона
 	document.querySelectorAll('.portfolio .item').forEach(element => {
-		element.addEventListener('mouseover', () => {
+		element.addEventListener('mouseenter', function () {
 			document.documentElement.style.setProperty('--bg', this.querySelector('.thumb').getAttribute('data-color'))
 		})
 	})
@@ -205,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		if (!feedbackFormErrors) {
 			let params = {
-				subject: document.getElementById('input_subject').value,
+				service: document.getElementById('input_service').value,
 				email: document.getElementById('input_email').value,
 				text: document.getElementById("input_text").value
 			},

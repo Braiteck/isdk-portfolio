@@ -5,7 +5,7 @@
 
     $subject = "ISDK Portfolio - Feedback";
 
-    $message = "Тема: " . $data->subject . "\r\n";
+    $message = "Услуга: " . $data->service . "\r\n";
     $message .= "E-mail: " . $data->email . "\r\n";
     $message .= "Текст сообщения: " . $data->text . "\r\n";
 

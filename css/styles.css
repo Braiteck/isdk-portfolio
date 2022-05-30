@@ -819,7 +819,7 @@ header .feedback_btn
 
 .portfolio .item .thumb.green
 {
-    background: #eff7ea;
+    background: #f7fdf6;
 }
 
 .portfolio .item .thumb.blue
@@ -1168,6 +1168,69 @@ header .feedback_btn
 .about_block .link:hover .icon
 {
     transform: translate(4px, -4px);
+}
+
+
+
+/*---------------
+    Case head
+---------------*/
+.case_head
+{
+    margin-bottom: 40px;
+    padding-top: 149px;
+
+    text-align: center;
+}
+
+.case_head.bg1
+{
+    background: #ebf5ff;
+}
+
+.case_head.bg2
+{
+    background: #feebea;
+}
+
+.case_head.bg3
+{
+    background: #f7fdf6;
+}
+
+
+.case_head .pre_title
+{
+    color: #5c5c5c;
+    font-size: 29px;
+    line-height: 38px;
+
+    margin-bottom: 30px;
+
+    letter-spacing: -1px;
+}
+
+
+.case_head .title
+{
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 80px;
+
+    margin-bottom: 20px;
+
+    letter-spacing: -2px;
+
+    font-feature-settings: 'ss01' on;
+}
+
+
+.case_head img
+{
+    display: block;
+
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 
