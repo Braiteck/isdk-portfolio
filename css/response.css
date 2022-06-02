@@ -91,7 +91,7 @@
     /*------------------
         Action block
     ------------------*/
-    .action_block .feedback_link
+    .action_block .feedback_btn
     {
         font-size: 26px;
         line-height: 32px;
@@ -452,7 +452,7 @@
     }
 
 
-    .action_block .feedback_link
+    .action_block .feedback_btn
     {
         font-size: 24px;
         line-height: 30px;
@@ -460,7 +460,7 @@
         padding: 19px;
     }
 
-    .action_block .feedback_link .icon
+    .action_block .feedback_btn .icon
     {
         width: 36px;
         height: 36px;
@@ -1208,7 +1208,12 @@
     /*------------------
         Action block
     ------------------*/
-    .action_block .feedback_link br
+    .action_block .feedback_btn
+    {
+        text-align: left;
+    }
+
+    .action_block .feedback_btn br
     {
         display: block;
     }
@@ -1592,17 +1597,17 @@
     /*------------------
         Action block
     ------------------*/
-    .action_block .feedback_link
+    .action_block .feedback_btn
     {
         padding: 22px 23px 22px 15px;
     }
 
-    .action_block .feedback_link .icon
+    .action_block .feedback_btn .icon
     {
         margin-right: auto;
     }
 
-    .action_block .feedback_link span
+    .action_block .feedback_btn span
     {
         width: calc(100% - 64px);
     }

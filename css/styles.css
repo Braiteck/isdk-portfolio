@@ -817,20 +817,6 @@ header .feedback_btn
     flex-wrap: wrap;
 }
 
-.portfolio .item .thumb.green
-{
-    background: #f7fdf6;
-}
-
-.portfolio .item .thumb.blue
-{
-    background: #ebf5ff;
-}
-
-.portfolio .item .thumb.pink
-{
-    background: #feebea;
-}
 
 .portfolio .item .thumb img
 {
@@ -863,8 +849,8 @@ header .feedback_btn
     margin-top: 30px;
 
     justify-content: space-between;
-    align-items: center;
-    align-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -1217,7 +1203,7 @@ header .feedback_btn
     font-weight: 800;
     line-height: 80px;
 
-    margin-bottom: 20px;
+    margin-bottom: 28px;
 
     letter-spacing: -2px;
 
