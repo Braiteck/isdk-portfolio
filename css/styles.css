@@ -1184,6 +1184,11 @@ header .feedback_btn
     background: #f7fdf6;
 }
 
+.case_head.bg4
+{
+    background: #f4f4ff;
+}
+
 
 .case_head .pre_title
 {
@@ -1208,6 +1213,12 @@ header .feedback_btn
     letter-spacing: -2px;
 
     font-feature-settings: 'ss01' on;
+}
+
+
+.case_head .image.top_m
+{
+    margin-top: 52px;
 }
 
 
