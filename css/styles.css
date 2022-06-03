@@ -1208,17 +1208,11 @@ header .feedback_btn
     font-weight: 800;
     line-height: 80px;
 
-    margin-bottom: 28px;
+    margin-bottom: 48px;
 
     letter-spacing: -2px;
 
     font-feature-settings: 'ss01' on;
-}
-
-
-.case_head .image.top_m
-{
-    margin-top: 52px;
 }
 
 
