@@ -1389,10 +1389,22 @@
     /*---------------
         Next case
     ---------------*/
+    .next_case .data
+    {
+        height: 400px;
+    }
+
+
+    .next_case .company
+    {
+        font-size: 20px;
+    }
+
+
     .next_case .name
     {
-        font-size: 40px;
-        line-height: 52px;
+        font-size: 41px;
+        line-height: 51px;
     }
 
 
@@ -1706,21 +1718,21 @@
 
     .next_case .data
     {
-        height: 408px;
+        height: 360px;
         padding: 60px 24px;
     }
 
 
     .next_case .company
     {
-        font-size: 19px;
-        line-height: 27px;
+        font-size: 18px;
+        line-height: 26px;
     }
 
     .next_case .name
     {
-        font-size: 44px;
-        line-height: 56px;
+        font-size: 37px;
+        line-height: 49px;
     }
 
 

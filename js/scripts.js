@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const portfolioRow = document.querySelector('.portfolio .row')
 
 	if (portfolioRow) {
-		const iso = new Isotope('.portfolio .row', {
+		iso = new Isotope('.portfolio .row', {
 			itemSelector: '.item',
 			layoutMode: 'fitRows'
 		})
