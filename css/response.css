@@ -53,6 +53,16 @@
 
 
 
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 18px;
+    }
+
+
+
     /*---------------
         Portfolio
     ---------------*/
@@ -228,6 +238,48 @@
 
 
 
+    /*--------------------
+        Privacy policy
+    --------------------*/
+    .privacy_policy
+    {
+        padding-top: 140px;
+        padding-bottom: 52px;
+    }
+
+
+
+    .privacy_policy .page_title
+    {
+        font-size: 60px;
+        line-height: 72px;
+
+        margin-bottom: 104px;
+    }
+
+
+    .privacy_policy .section + .section
+    {
+        margin-top: 52px;
+    }
+
+
+    .privacy_policy .title
+    {
+        font-size: 26px;
+        line-height: 32px;
+
+        width: 296px;
+    }
+
+
+    .privacy_policy .text_block
+    {
+        width: calc(100% - 324px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -363,6 +415,34 @@
     {
         font-size: 14px;
         line-height: 20px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+
+    .text_block > *
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .text_block ul li:before
+    {
+        top: 9px;
+    }
+
+    .text_block ul li.mar_t
+    {
+        margin-top: 20px;
     }
 
 
@@ -626,6 +706,41 @@
 
 
 
+    /*--------------------
+        Privacy policy
+    --------------------*/
+    .privacy_policy
+    {
+        padding-bottom: 48px;
+    }
+
+
+
+    .privacy_policy .page_title
+    {
+        font-size: 52px;
+        line-height: 64px;
+
+        margin-bottom: 80px;
+    }
+
+
+    .privacy_policy .title
+    {
+        font-size: 24px;
+        line-height: 30px;
+
+        width: 272px;
+    }
+
+
+    .privacy_policy .text_block
+    {
+        width: calc(100% - 300px);
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -788,6 +903,23 @@
 
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block
+    {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+
+    .text_block ul li:before
+    {
+        top: 8px;
     }
 
 
@@ -1033,6 +1165,38 @@
         line-height: 64px;
 
         margin-top: 40px;
+    }
+
+
+
+    /*--------------------
+        Privacy policy
+    --------------------*/
+    .privacy_policy
+    {
+        padding-top: 132px;
+    }
+
+
+    .privacy_policy .page_title
+    {
+        margin-bottom: 72px;
+    }
+
+
+    .privacy_policy .title
+    {
+        font-size: 22px;
+        line-height: 28px;
+
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .privacy_policy .text_block
+    {
+        width: 100%;
     }
 
 
@@ -1409,6 +1573,26 @@
 
 
 
+    /*--------------------
+        Privacy policy
+    --------------------*/
+    .privacy_policy
+    {
+        padding-top: 124px;
+        padding-bottom: 24px;
+    }
+
+
+    .privacy_policy .page_title
+    {
+        font-size: 44px;
+        line-height: 52px;
+
+        margin-bottom: 60px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/
@@ -1733,6 +1917,26 @@
     {
         font-size: 37px;
         line-height: 49px;
+    }
+
+
+
+    /*--------------------
+        Privacy policy
+    --------------------*/
+    .privacy_policy
+    {
+        padding-top: 100px;
+        padding-bottom: 20px;
+    }
+
+
+    .privacy_policy .page_title
+    {
+        font-size: 40px;
+        line-height: 48px;
+
+        margin-bottom: 52px;
     }
 
 
