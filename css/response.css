@@ -951,12 +951,6 @@
     }
 
 
-    .case_head img
-    {
-        max-width: 90%;
-    }
-
-
 
     /*---------------
         Case data
@@ -1329,17 +1323,13 @@
     {
         font-size: 46px;
         line-height: 56px;
+
+        margin-bottom: 32px;
     }
 
     .case_head .title br
     {
         display: none;
-    }
-
-
-    .case_head img
-    {
-        max-width: 95%;
     }
 
 
@@ -1686,6 +1676,8 @@
     {
         font-size: 40px;
         line-height: 52px;
+
+        margin-bottom: 24px;
     }
 
 
