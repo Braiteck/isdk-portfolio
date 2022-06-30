@@ -874,7 +874,7 @@ header .feedback_btn
     overflow: hidden;
 
     width: 100%;
-    padding-bottom: 56.25%;
+    padding-bottom: 58.36%;
 
     background: #ddd;
 
@@ -894,14 +894,16 @@ header .feedback_btn
 
     display: block;
 
+    width: 100%;
     min-width: 200px;
-    max-width: calc(100% - 108px);
+    height: 100%;
     min-height: 200px;
-    max-height: calc(100% - 54px);
     margin: auto;
 
     border-radius: 5px;
 
+    object-fit: cover;
+    object-position: 50% 100%;
     filter: drop-shadow(0px 26px 64px rgba(8, 55, 82, .07));
 }
 
