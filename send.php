@@ -5,9 +5,9 @@
 
     $subject = "ISDK Portfolio - Feedback";
 
-    $message = "Услуга: " . $data->service . "\r\n";
-    $message .= "E-mail: " . $data->email . "\r\n";
-    $message .= "Текст сообщения: " . $data->text . "\r\n";
+    $message = "Услуга: " . $data->service . "<br>";
+    $message .= "E-mail: " . $data->email . "<br>";
+    $message .= "Текст сообщения: " . $data->text . "<br>";
 
     $headers  = "Content-type: text/html; charset=windows-1251 \r\n";
     $headers .= "Reply-To: ". $data->email ."\r\n";
